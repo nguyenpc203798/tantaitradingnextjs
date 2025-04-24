@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+- Use nextjs latest version 15.3.1
+- Use application router
+- Use src configuration folder
+- Use ES module
+- Follow SOLID principles: Apply SOLID principles to write code that is easy to understand and maintain.
+- Use TypeScript: Helps detect errors early and improve source code maintainability.
+- Use Static Generation (SSG): Use getStaticProps to generate static pages, making pages load faster and improving SEO.
+- Lazy loading and code splitting: Use next/dynamic to load components only when needed, reducing the size of the JavaScript ban of the size bundle.
+- Use Link tags in navigation
+- Optimize images: Use Next.js <Image> element to automatically optimize images, reducing page load time.
+
+
+- Use Incremental Static Regeneration (ISR): Update page content without rebuilding the entire page, improving performance.

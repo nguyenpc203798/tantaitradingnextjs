@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "services": "Dịch Vụ",
+    "contact": "Liên Hệ"
+  },
+  "home": {
+    "hero": {
+      "title": "Giải Pháp Kinh Doanh Chuyên Nghiệp",
+      "subtitle": "Tối ưu hóa hoạt động của bạn với các dịch vụ được thiết kế riêng",
+      "cta": "Bắt Đầu Ngay"
+    },
+    "features": {
+      "title": "Dịch Vụ Của Chúng Tôi",
+      "subtitle": "Chúng tôi cung cấp giải pháp toàn diện cho doanh nghiệp của bạn",
+      "item1": {
+        "title": "Tư Vấn Kinh Doanh",
+        "description": "Lời khuyên chiến lược để giúp doanh nghiệp của bạn phát triển"
+      },
+      "item2": {
+        "title": "Chuyển Đổi Số",
+        "description": "Hiện đại hóa quy trình của bạn với công nghệ tiên tiến"
+      },
+      "item3": {
+        "title": "Dịch Vụ Tài Chính",
+        "description": "Lập kế hoạch và quản lý tài chính chuyên nghiệp"
+      }
+    },
+    "cta": {
+      "title": "Sẵn sàng để chuyển đổi doanh nghiệp của bạn?",
+      "subtitle": "Liên hệ với chúng tôi ngay hôm nay để được tư vấn miễn phí",
+      "button": "Liên Hệ Ngay"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Tantai Trading. Đã đăng ký Bản quyền.",
+    "links": {
+      "privacy": "Chính Sách Bảo Mật",
+      "terms": "Điều Khoản Dịch Vụ"
+    }
+  }
+} 

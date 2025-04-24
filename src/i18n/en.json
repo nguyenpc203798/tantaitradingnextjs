@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Professional Business Solutions",
+      "subtitle": "Optimize your operations with our tailored services",
+      "cta": "Get Started"
+    },
+    "features": {
+      "title": "Our Services",
+      "subtitle": "We provide comprehensive solutions for your business",
+      "item1": {
+        "title": "Business Consulting",
+        "description": "Strategic advice to help your business grow"
+      },
+      "item2": {
+        "title": "Digital Transformation",
+        "description": "Modernize your processes with cutting-edge technology"
+      },
+      "item3": {
+        "title": "Financial Services",
+        "description": "Expert financial planning and management"
+      }
+    },
+    "cta": {
+      "title": "Ready to transform your business?",
+      "subtitle": "Contact us today for a free consultation",
+      "button": "Contact Us"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Tantai Trading. All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  }
+} 
