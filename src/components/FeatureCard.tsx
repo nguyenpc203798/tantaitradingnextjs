@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import { cn } from "@/lib/utils";
 
 interface FeatureCardProps {
@@ -8,12 +8,12 @@ interface FeatureCardProps {
   className?: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({
+const FeatureCard = memo(({
   title,
   description,
   icon,
   className,
-}) => {
+}: FeatureCardProps) => {
   return (
     <div className={cn(
       "bg-card text-card-foreground rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow",
@@ -26,6 +26,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       <p className="text-muted-foreground">{description}</p>
     </div>
   );
-};
+});
+
+FeatureCard.displayName = "FeatureCard";
 
 export default FeatureCard; 

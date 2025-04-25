@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useTheme } from "@/context/ThemeContext";
@@ -7,11 +7,24 @@ interface MainLayoutProps {
   children: React.ReactNode;
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
-  const { theme } = useTheme();
+// Sử dụng function component
+function MainLayout({ children }: MainLayoutProps) {
+  // Client-side rendering và xử lý hydration mismatch
+  const [isClient, setIsClient] = useState(false);
   
+  // Sử dụng useEffect để xác định khi rendered trên client
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+  
+  // Lấy theme từ context
+  const { theme } = useTheme();
+
+  // Logic className cho theme
+  const themeClass = isClient && theme === "dark" ? "dark" : "";
+
   return (
-    <div className={`min-h-screen flex flex-col ${theme === "dark" ? "dark" : ""}`}>
+    <div className={`min-h-screen flex flex-col ${themeClass}`}>
       <Header />
       <main className="flex-grow pt-16">
         {children}
@@ -19,6 +32,6 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <Footer />
     </div>
   );
-};
+}
 
-export default MainLayout; 
+export default MainLayout;

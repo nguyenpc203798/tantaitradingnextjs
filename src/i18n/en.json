@@ -33,6 +33,43 @@
       "button": "Contact Us"
     }
   },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "description": "Tantai Trading is a leading company providing professional business solutions in Vietnam. We are dedicated to helping businesses grow and succeed."
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Founded in 2020, Tantai Trading began with a simple vision: to help Vietnamese businesses unlock their full potential through innovative and effective business solutions.",
+      "paragraph2": "From humble beginnings with a small team of 5 members, we have grown into a company of over 50 dedicated specialists in various fields.",
+      "paragraph3": "Our mission remains unchanged: to provide high-quality, personalized, and effective services that help our clients achieve their business goals."
+    },
+    "team": {
+      "title": "Leadership Team",
+      "description": "Our talented and diverse leadership team, with extensive experience across many fields, is the foundation for Tantai Trading's success."
+    },
+    "values": {
+      "title": "Core Values",
+      "description": "These values shape every decision and action we take.",
+      "integrity": {
+        "title": "Integrity",
+        "description": "We prioritize honesty and transparency in every interaction with clients and partners."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly seek new and creative approaches to solve complex challenges."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We are committed to delivering the highest quality in every aspect of our work."
+      }
+    },
+    "cta": {
+      "title": "Grow With Us",
+      "description": "Join our team and be part of a success journey.",
+      "button": "Explore Career Opportunities"
+    }
+  },
   "footer": {
     "copyright": "© 2025 Tantai Trading. All rights reserved.",
     "links": {

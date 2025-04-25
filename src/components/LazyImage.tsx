@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -11,33 +11,49 @@ interface LazyImageProps {
   priority?: boolean;
 }
 
-const LazyImage: React.FC<LazyImageProps> = ({
+const PLACEHOLDER_IMAGE = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2YxZjVmOSIvPjwvc3ZnPg==";
+
+const useImageLoader = (src: string, priority = false) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [currentSrc, setCurrentSrc] = useState(PLACEHOLDER_IMAGE);
+
+  useEffect(() => {
+    setIsLoading(true);
+    setCurrentSrc(PLACEHOLDER_IMAGE);
+    
+    if (priority) {
+      setCurrentSrc(src);
+      setIsLoading(false);
+      return;
+    }
+    
+    const img = document.createElement('img');
+    img.src = src;
+    
+    const handleLoad = () => {
+      setCurrentSrc(src);
+      setIsLoading(false);
+    };
+    
+    img.addEventListener('load', handleLoad);
+    
+    return () => {
+      img.removeEventListener('load', handleLoad);
+    };
+  }, [src, priority]);
+
+  return { isLoading, currentSrc, setIsLoading };
+};
+
+const LazyImage = memo(({
   src,
   alt,
   width = 800,
   height = 600,
   className,
   priority = false,
-}) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [currentSrc, setCurrentSrc] = useState(
-    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2YxZjVmOSIvPjwvc3ZnPg=="
-  );
-
-  useEffect(() => {
-    // Chỉ tải ảnh nếu không phải priority
-    if (!priority) {
-      const img = document.createElement('img');
-      img.src = src;
-      img.onload = () => {
-        setCurrentSrc(src);
-        setIsLoading(false);
-      };
-    } else {
-      setCurrentSrc(src);
-      setIsLoading(false);
-    }
-  }, [src, priority]);
+}: LazyImageProps) => {
+  const { isLoading, currentSrc, setIsLoading } = useImageLoader(src, priority);
 
   return (
     <div className="relative overflow-hidden">
@@ -58,6 +74,8 @@ const LazyImage: React.FC<LazyImageProps> = ({
       />
     </div>
   );
-};
+});
+
+LazyImage.displayName = "LazyImage";
 
 export default LazyImage; 

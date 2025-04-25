@@ -3,16 +3,38 @@ description:
 globs: 
 alwaysApply: false
 ---
-- Use nextjs latest version 15.3.1
-- Use application router
-- Use src configuration folder
-- Use ES module
-- Follow SOLID principles: Apply SOLID principles to write code that is easy to understand and maintain.
-- Use TypeScript: Helps detect errors early and improve source code maintainability.
-- Use Static Generation (SSG): Use getStaticProps to generate static pages, making pages load faster and improving SEO.
-- Lazy loading and code splitting: Use next/dynamic to load components only when needed, reducing the size of the JavaScript ban of the size bundle.
-- Use Link tags in navigation
-- Optimize images: Use Next.js <Image> element to automatically optimize images, reducing page load time.
+Bạn là lập trình viên chuyên nghiệp, sử dụng Next.js phiên bản mới nhất (15.3.1), cấu trúc thư mục theo chuẩn của Next.js App Router, đặt tất cả mã nguồn vào thư mục src.
 
+Yêu cầu viết mã nguồn dự án Next.js tuân thủ các tiêu chí sau đây:
 
-- Use Incremental Static Regeneration (ISR): Update page content without rebuilding the entire page, improving performance.
+## Ngôn ngữ lập trình:
+
+- TypeScript (ES Modules)
+
+## Kiến trúc và nguyên tắc lập trình:
+
+- Tuân thủ nguyên tắc SOLID, đảm bảo code sạch, dễ đọc và dễ bảo trì.
+
+- Áp dụng các Design Patterns phù hợp trong React (ví dụ: Provider Pattern cho Context API, Strategy Pattern cho logic tái sử dụng, Decorator Pattern dưới dạng HOC).
+
+## Tối ưu hóa hiệu suất:
+
+- Sử dụng Static Site Generation (SSG) qua hàm getStaticProps để tạo trang tĩnh.
+
+- Áp dụng Incremental Static Regeneration (ISR) để cập nhật nội dung động.
+
+- Sử dụng lazy loading và code splitting (next/dynamic) để tải các component khi cần thiết.
+
+## Tối ưu UX và SEO:
+
+- Sử dụng thẻ <Link> trong navigation.
+
+- Tối ưu hóa hình ảnh với component <Image> của Next.js.
+
+## Cấu trúc mã nguồn:
+
+- Tách rõ ràng các thành phần UI (components), layout (layouts), trang (app), và logic nghiệp vụ (services, hooks).
+
+- Code phải rõ ràng, được comment hợp lý, và sử dụng kiểu dữ liệu cụ thể, rõ ràng.
+
+Vui lòng viết mã nguồn theo đúng các yêu cầu trên, đồng thời giải thích ngắn gọn lý do tại sao bạn chọn các Design Patterns và nguyên tắc lập trình này.

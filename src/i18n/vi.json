@@ -33,6 +33,43 @@
       "button": "Liên Hệ Ngay"
     }
   },
+  "about": {
+    "hero": {
+      "title": "Về Chúng Tôi",
+      "description": "Tantai Trading là công ty hàng đầu cung cấp giải pháp kinh doanh chuyên nghiệp tại Việt Nam. Chúng tôi tận tâm giúp các doanh nghiệp phát triển và thành công."
+    },
+    "story": {
+      "title": "Câu Chuyện Của Chúng Tôi",
+      "paragraph1": "Được thành lập vào năm 2020, Tantai Trading bắt đầu với một tầm nhìn đơn giản: giúp các doanh nghiệp Việt Nam khai thác tiềm năng đầy đủ của họ thông qua các giải pháp kinh doanh sáng tạo và hiệu quả.",
+      "paragraph2": "Từ những ngày đầu khiêm tốn với một nhóm nhỏ 5 thành viên, chúng tôi đã phát triển thành một công ty có hơn 50 chuyên gia tận tâm trong nhiều lĩnh vực khác nhau.",
+      "paragraph3": "Sứ mệnh của chúng tôi vẫn không thay đổi: cung cấp dịch vụ chất lượng cao, cá nhân hóa và hiệu quả giúp khách hàng đạt được mục tiêu kinh doanh của họ."
+    },
+    "team": {
+      "title": "Đội Ngũ Lãnh Đạo",
+      "description": "Nhóm lãnh đạo tài năng và đa dạng của chúng tôi, với kinh nghiệm rộng rãi trong nhiều lĩnh vực, là nền tảng cho sự thành công của Tantai Trading."
+    },
+    "values": {
+      "title": "Giá Trị Cốt Lõi",
+      "description": "Những giá trị này định hình mọi quyết định và hành động của chúng tôi.",
+      "integrity": {
+        "title": "Chính Trực",
+        "description": "Chúng tôi đặt sự trung thực và minh bạch lên hàng đầu trong mọi tương tác với khách hàng và đối tác."
+      },
+      "innovation": {
+        "title": "Đổi Mới",
+        "description": "Chúng tôi không ngừng tìm kiếm những cách tiếp cận mới và sáng tạo để giải quyết các thách thức phức tạp."
+      },
+      "excellence": {
+        "title": "Xuất Sắc",
+        "description": "Chúng tôi cam kết mang đến chất lượng tốt nhất trong mọi khía cạnh công việc của mình."
+      }
+    },
+    "cta": {
+      "title": "Hãy Cùng Chúng Tôi Phát Triển",
+      "description": "Tham gia nhóm của chúng tôi và là một phần của hành trình thành công.",
+      "button": "Tìm Hiểu Cơ Hội Nghề Nghiệp"
+    }
+  },
   "footer": {
     "copyright": "© 2025 Tantai Trading. Đã đăng ký Bản quyền.",
     "links": {

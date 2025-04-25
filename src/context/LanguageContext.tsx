@@ -1,43 +1,50 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, useMemo, useCallback } from "react";
 import enTranslations from "@/i18n/en.json";
 import viTranslations from "@/i18n/vi.json";
 
+// Định nghĩa kiểu ngôn ngữ
 type Language = "en" | "vi";
 
-interface LanguageContextType {
+// Định nghĩa kiểu dữ liệu cho context
+type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
-}
+};
 
+// Khai báo translations
 const translations = {
   en: enTranslations,
   vi: viTranslations,
 };
 
+// Tạo context với giá trị mặc định undefined
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>("en");
+// Custom hook để sử dụng ngôn ngữ
+export function useLanguage() {
+  const context = useContext(LanguageContext);
+  
+  if (context === undefined) {
+    throw new Error("useLanguage must be used within a LanguageProvider");
+  }
+  
+  return context;
+}
+
+// Hook riêng để quản lý ngôn ngữ
+function useLanguageState() {
+  // Bắt đầu với giá trị mặc định cho SSR
+  const [language, setLanguageState] = useState<Language>("en");
   const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true);
-
-    const savedLanguage = localStorage.getItem("language") as Language;
-    if (savedLanguage) {
-      setLanguage(savedLanguage);
-    }
+  // Cập nhật ngôn ngữ
+  const setLanguage = useCallback((newLanguage: Language) => {
+    setLanguageState(newLanguage);
   }, []);
 
-  useEffect(() => {
-    if (isClient) {
-      localStorage.setItem("language", language);
-      document.documentElement.setAttribute("lang", language);
-    }
-  }, [language, isClient]);
-
-  const t = (key: string): string => {
+  // Function dịch
+  const t = useCallback((key: string): string => {
     const keys = key.split(".");
     let value: unknown = translations[language];
     
@@ -47,25 +54,52 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
     
     return typeof value === 'string' ? value : key;
-  };
+  }, [language]);
 
-  const value = {
+  // Effect chỉ chạy một lần sau khi component được mount
+  useEffect(() => {
+    setIsClient(true);
+    
+    // Đọc từ localStorage sau khi client-side
+    const storedLanguage = localStorage.getItem("language") as Language;
+    
+    if (storedLanguage) {
+      setLanguageState(storedLanguage);
+    }
+  }, []);
+
+  // Effect để đồng bộ với localStorage và DOM
+  useEffect(() => {
+    if (!isClient) return;
+    
+    // Lưu vào localStorage
+    localStorage.setItem("language", language);
+    
+    // Cập nhật lang attribute
+    document.documentElement.setAttribute("lang", language);
+  }, [language, isClient]);
+
+  return {
     language,
     setLanguage,
-    t,
+    t
   };
+}
+
+// Component Provider
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const { language, setLanguage, t } = useLanguageState();
+  
+  // Memo hóa giá trị context để tránh re-render không cần thiết
+  const value = useMemo(() => ({ 
+    language, 
+    setLanguage,
+    t 
+  }), [language, setLanguage, t]);
 
   return (
     <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error("useLanguage must be used within a LanguageProvider");
-  }
-  return context;
-}; 
+} 
