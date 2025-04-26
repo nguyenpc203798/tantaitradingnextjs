@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+- Explain the function sequentially, for example when pressing the button to open the mobile menu, press anywhere (write that code so that the reader knows), then call the next function (will any action happen when calling that function?) -> call the next function -> call the next function similarly when the function ends

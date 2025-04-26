@@ -1,40 +1,64 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
-Bạn là lập trình viên chuyên nghiệp, sử dụng Next.js phiên bản mới nhất (15.3.1), cấu trúc thư mục theo chuẩn của Next.js App Router, đặt tất cả mã nguồn vào thư mục src.
+## Project Structure
 
-Yêu cầu viết mã nguồn dự án Next.js tuân thủ các tiêu chí sau đây:
+- Use Next.js App Router structure.
 
-## Ngôn ngữ lập trình:
+- All source code is located inside the src folder.
 
-- TypeScript (ES Modules)
+## Language & Module System
 
-## Kiến trúc và nguyên tắc lập trình:
+- Use TypeScript with ES Modules.
 
-- Tuân thủ nguyên tắc SOLID, đảm bảo code sạch, dễ đọc và dễ bảo trì.
+## SOLID Principles
 
-- Áp dụng các Design Patterns phù hợp trong React (ví dụ: Provider Pattern cho Context API, Strategy Pattern cho logic tái sử dụng, Decorator Pattern dưới dạng HOC).
+- Ensure adherence to SOLID principles for clean, readable, and maintainable code.
 
-## Tối ưu hóa hiệu suất:
+## React Design Patterns
 
-- Sử dụng Static Site Generation (SSG) qua hàm getStaticProps để tạo trang tĩnh.
+- Provider Pattern for Context API: Efficient global state management.
 
-- Áp dụng Incremental Static Regeneration (ISR) để cập nhật nội dung động.
+- Strategy Pattern: Reusable logic encapsulation to facilitate flexible and interchangeable behaviors.
 
-- Sử dụng lazy loading và code splitting (next/dynamic) để tải các component khi cần thiết.
+- Decorator Pattern (HOC): Enhance components with additional responsibilities dynamically.
 
-## Tối ưu UX và SEO:
+## Rendering Methods
 
-- Sử dụng thẻ <Link> trong navigation.
+- Implement Static Site Generation (SSG) using getStaticProps for static pages.
 
-- Tối ưu hóa hình ảnh với component <Image> của Next.js.
+- Use Incremental Static Regeneration (ISR) for dynamically updating content.
 
-## Cấu trúc mã nguồn:
+## Performance Optimization
 
-- Tách rõ ràng các thành phần UI (components), layout (layouts), trang (app), và logic nghiệp vụ (services, hooks).
+- Apply lazy loading and code splitting via next/dynamic to load components only when necessary.
 
-- Code phải rõ ràng, được comment hợp lý, và sử dụng kiểu dữ liệu cụ thể, rõ ràng.
+- Optimize images with Next.js's built-in <Image> component.
 
-Vui lòng viết mã nguồn theo đúng các yêu cầu trên, đồng thời giải thích ngắn gọn lý do tại sao bạn chọn các Design Patterns và nguyên tắc lập trình này.
+## Navigation
+
+- Utilize <Link> components for navigation.
+
+## Clear Separation of Concerns
+
+- Components: Reusable UI elements (components).
+
+- Layouts: Common layout wrappers (layouts).
+
+- Pages: Application-specific views (app).
+
+- Business Logic: Clearly separated into services and hooks (services, hooks).
+
+ ## Coding Standards
+
+- Write explicit and clear type definitions.
+
+- Ensure the codebase is self-documenting, with meaningful comments.
+
+- Prefer @ for path aliases to simplify imports.
+
+## Code Explanation Standard
+
+- Clearly explain code with simple language, include practical examples, and always provide the output/result after executing the provided example code.

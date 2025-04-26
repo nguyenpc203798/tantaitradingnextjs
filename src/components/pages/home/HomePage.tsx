@@ -4,7 +4,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import LazyImage from "@/components/LazyImage";
-import FeatureCard from "@/components/FeatureCard";
+import FeatureCard from "@/components/pages/home/FeatureCard";
 import { BarChart } from "lucide-react";
 
 const HomePage = () => {
@@ -42,7 +42,7 @@ const HomePage = () => {
                 {t("home.hero.subtitle")}
               </p>
               <div className="pt-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                <Button size="lg" variant="default">
                   {t("home.hero.cta")}
                 </Button>
               </div>

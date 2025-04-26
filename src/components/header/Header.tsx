@@ -1,9 +1,9 @@
 import { memo, useState, useCallback } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import ThemeSwitcher from "./ThemeSwitcher";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { Button } from "./ui/button";
+import ThemeSwitcher from "@/components/header/ThemeSwitcher";
+import LanguageSwitcher from "@/components/header/LanguageSwitcher";
+import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 
 // Tách phần Navigation thành component riêng (SRP)

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import HomePage from "@/components/HomePage";
+import HomePage from "@/components/pages/home/HomePage";
 import { generateSeoMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = generateSeoMetadata({
