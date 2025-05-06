@@ -2,7 +2,17 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
+    "products": "Products",
+    "products_items": {
+      "coffee": "Coffee",
+      "rubber": "Natural Rubber",
+      "tapioca": "Tapioca Starch",
+      "cashew": "Cashew Nuts",
+      "star_anise": "Star Anise",
+      "cinnamon": "Cinnamon",
+      "pepper": "Black Pepper"
+    },
+    "news": "News",
     "contact": "Contact"
   },
   "home": {

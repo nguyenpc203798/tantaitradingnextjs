@@ -2,7 +2,17 @@
   "nav": {
     "home": "Trang Chủ",
     "about": "Giới Thiệu",
-    "services": "Dịch Vụ",
+    "products": "Ngành Hàng",
+    "products_items": {
+      "coffee": "Cà Phê",
+      "rubber": "Cao Su Thiên Nhiên",
+      "tapioca": "Tinh Bột Sắn",
+      "cashew": "Hạt Điều",
+      "star_anise": "Hoa Hồi",
+      "cinnamon": "Quế",
+      "pepper": "Hạt Tiêu"
+    },
+    "news": "Tin Tức",
     "contact": "Liên Hệ"
   },
   "home": {

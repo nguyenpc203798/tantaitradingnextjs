@@ -62,3 +62,8 @@ alwaysApply: true
 ## Code Explanation Standard
 
 - Clearly explain code with simple language, include practical examples, and always provide the output/result after executing the provided example code.
+Responsiveness
+
+## Always ensure responsiveness within source code:
+
+"Always pay attention to responsiveness in the source code to ensure good performance across all devices."

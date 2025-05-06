@@ -5,11 +5,12 @@ import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import LazyImage from "@/components/LazyImage";
 import FeatureCard from "@/components/pages/home/FeatureCard";
+import HomeSlider from "@/components/pages/home/HomeSlider";
 import { BarChart } from "lucide-react";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  
+
   const features = [
     {
       icon: <BarChart className="h-6 w-6 text-primary" />,
@@ -30,6 +31,9 @@ const HomePage = () => {
 
   return (
     <MainLayout>
+      {/* Slider Section */}
+      <HomeSlider />
+
       {/* Hero Section */}
       <section className="pt-20 pb-16 md:py-32 bg-secondary/50">
         <div className="container mx-auto px-4">
@@ -48,7 +52,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="hidden md:block">
-              <LazyImage 
+              <LazyImage
                 src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800"
                 alt="Business team working together"
                 className="rounded-lg shadow-lg"
@@ -59,7 +63,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Features Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -69,7 +73,7 @@ const HomePage = () => {
               {t("home.features.subtitle")}
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <FeatureCard
@@ -83,7 +87,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
