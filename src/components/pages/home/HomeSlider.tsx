@@ -4,33 +4,36 @@ import { memo } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectFade, Autoplay } from 'swiper/modules';
+import { useLanguage } from '@/context/LanguageContext';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
-// Mảng chứa thông tin các slide
-const sliderImages = [
-  {
-    src: '/images/slider/slide1.jpg',
-    alt: 'Tantai Trading Slide 1'
-  },
-  {
-    src: '/images/slider/slide2.jpg',
-    alt: 'Tantai Trading Slide 2'
-  },
-  {
-    src: '/images/slider/slide3.jpg',
-    alt: 'Tantai Trading Slide 3'
-  },
-  {
-    src: '/images/slider/slide4.jpg',
-    alt: 'Tantai Trading Slide 4'
-  }
-];
-
 const HomeSlider = memo(() => {
+  const { t } = useLanguage();
+  
+  // Mảng chứa thông tin các slide
+  const sliderImages = [
+    {
+      src: '/images/slider/slide1.jpg',
+      alt: t('home.slider.slide1_alt') || 'Tantai Trading Slide 1'
+    },
+    {
+      src: '/images/slider/slide2.jpg',
+      alt: t('home.slider.slide2_alt') || 'Tantai Trading Slide 2'
+    },
+    {
+      src: '/images/slider/slide3.jpg',
+      alt: t('home.slider.slide3_alt') || 'Tantai Trading Slide 3'
+    },
+    {
+      src: '/images/slider/slide4.jpg',
+      alt: t('home.slider.slide4_alt') || 'Tantai Trading Slide 4'
+    }
+  ];
+
   return (
     <div className="relative w-full h-[400px] md:h-[600px]">
       <Swiper

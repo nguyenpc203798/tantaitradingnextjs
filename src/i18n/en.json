@@ -16,31 +16,116 @@
     "contact": "Contact"
   },
   "home": {
-    "hero": {
-      "title": "Professional Business Solutions",
-      "subtitle": "Optimize your operations with our tailored services",
-      "cta": "Get Started"
+    "slider": {
+      "slide1_alt": "Tantai Trading Coffee Fields",
+      "slide2_alt": "Tantai Trading Factory",
+      "slide3_alt": "Tantai Trading Warehouse",
+      "slide4_alt": "Tantai Trading Export Services"
     },
-    "features": {
-      "title": "Our Services",
-      "subtitle": "We provide comprehensive solutions for your business",
-      "item1": {
-        "title": "Business Consulting",
-        "description": "Strategic advice to help your business grow"
+    "about_section": {
+      "title": "ABOUT",
+      "main_description": "Tantai is a business specializing in agricultural products, especially coffee. With extensive experience, we connect closely from farmers, traders to domestic and international customers, committed to bringing high-quality products and professional services.",
+      "secondary_description": "With over a decade of experience in agricultural products, Tantai continuously expands its scale and improves quality, focusing on domestic trade, export business, and warehouse services with key products such as coffee, rubber, and cashew nuts. At the same time, we invest heavily in modern warehouse systems and logistics, ready to serve customers.",
+      "image1_alt": "Basket of red coffee cherries held by person wearing checkered shirt with green coffee leaves",
+      "image2_alt": "Farmers harvesting coffee plants in green hilly area wearing yellow and blue jackets",
+      "growth_strategies": {
+        "export_growth": {
+          "title": "Export Business Growth",
+          "items": [
+            "Expanding product portfolio.",
+            "Enhancing international trade promotion."
+          ]
+        },
+        "warehouse_investment": {
+          "title": "Warehouse & Processing Investment",
+          "items": [
+            "Enhancing raw material purchasing capacity.",
+            "Investing in smart agricultural warehouse systems and modern processing."
+          ]
+        },
+        "warehouse_service": {
+          "title": "Warehouse Service Development",
+          "items": [
+            "Leading in trade chains, deep processing, and exports.",
+            "Developing nationwide warehouse services."
+          ]
+        }
       },
-      "item2": {
-        "title": "Digital Transformation",
-        "description": "Modernize your processes with cutting-edge technology"
-      },
-      "item3": {
-        "title": "Financial Services",
-        "description": "Expert financial planning and management"
+      "stats": {
+        "company": "Tantai",
+        "company_subtitle": "Scale & Production",
+        "bags_per_year": "2 million",
+        "bags_subtitle": "Bags/ Year",
+        "tons_per_year": "110,000",
+        "tons_subtitle": "Tons/ year",
+        "revenue": "7,200",
+        "revenue_subtitle": "Billion VND revenue in 2024"
       }
     },
-    "cta": {
-      "title": "Ready to transform your business?",
-      "subtitle": "Contact us today for a free consultation",
-      "button": "Contact Us"
+    "products_section": {
+      "title": "TANTAI'S BUSINESS PRODUCT LINES",
+      "center_image_alt": "Lush green coffee plantation landscape with mountains and blue sky",
+      "products": {
+        "coffee": {
+          "name": "Coffee",
+          "description": "Coffee is one of Vietnam's key export items. Tantai Company provides the highest quality and most reliable coffee to customers."
+        },
+        "tapioca": {
+          "name": "Tapioca Starch",
+          "description": "Tapioca starch is widely used in the food industry. Tantai Company has been investing heavily in tapioca starch production and is highly regarded by partners for its quality."
+        },
+        "star_anise": {
+          "name": "Star Anise",
+          "description": "Star anise, a popular spice originating from Vietnam and China. Tantai Company produces and exports high-quality star anise to many international markets such as Asia, EU, and the US."
+        },
+        "rubber": {
+          "name": "Natural Rubber",
+          "description": "With a large raw material area, advanced production technology, and a team of experienced experts, Tantai Company provides high-quality rubber products for domestic and international markets."
+        },
+        "cashew": {
+          "name": "Cashew Nuts",
+          "description": "A globally popular food. Tantai Company supplies whole and roasted cashew kernels, ensuring high quality according to International standards."
+        },
+        "cinnamon": {
+          "name": "Cinnamon",
+          "description": "Vietnam is one of the world's leading suppliers of high-quality cinnamon. Tantai Company is a leading producer and exporter of organic cinnamon, aiming to plant 1,000 new hectares annually by 2030."
+        }
+      }
+    },
+    "warehouse_section": {
+      "title": "FACTORY - WAREHOUSE",
+      "image1_alt": "Interior of a large warehouse with forklifts and stacks of pallets",
+      "image2_alt": "Forklift lifting white sacks inside a warehouse with warm lighting",
+      "image3_alt": "Warehouse loading dock with pallets and a truck backed up to the door",
+      "image4_alt": "Two people wearing hardhats discussing inside a warehouse aisle"
+    },
+    "news_section": {
+      "section_label": "News & updates",
+      "heading": "Many opportunities for coffee export growth",
+      "description": "According to the General Department of Customs, from the beginning of 2024 to October 15, Vietnam exported 1.13 million tons of coffee with a turnover of 4.44 billion USD, a decrease of 11.1% in volume but an increase of 39.1% in value compared to the same period in 2023.",
+      "view_more": "View more",
+      "news_items": {
+        "item1": {
+          "date": "January 05, 2025",
+          "title": "Coffee exports for the 2023/2024 crop year exceed $5 billion",
+          "alt": "Close-up of hands holding red coffee cherries with some falling"
+        },
+        "item2": {
+          "date": "January 05, 2025",
+          "title": "Open door for coffee exports in 2024 to conquer new heights",
+          "alt": "Close-up image of roasted coffee beans in a container"
+        },
+        "item3": {
+          "date": "January 05, 2025",
+          "title": "Coffee exports for the 2023/2024 crop year exceed $5 billion",
+          "alt": "Close-up of hands holding red coffee cherries with some falling"
+        },
+        "item4": {
+          "date": "January 05, 2025",
+          "title": "Open door for coffee exports in 2024 to conquer new heights",
+          "alt": "Close-up image of roasted coffee beans in a container"
+        }
+      }
     }
   },
   "about": {
@@ -81,10 +166,22 @@
     }
   },
   "footer": {
+    "link": "Links",
+    "slogan": "Providing professional agricultural products to customers of all sizes.",
     "copyright": "© 2025 Tantai Trading. All rights reserved.",
     "links": {
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
+    },
+    "contact_info": {
+      "head_office": "Head Office: Khu phố 2, Thị trấn Tân Nghĩa, Huyện Hàm Tâm, Tỉnh Bình Thuận, Việt Nam",
+      "phone": "0899.565.868",
+      "email": "info@tantaitrading.com",
+      "response": "24/7 response via phone and email."
+    },
+    "representative_office": {
+      "title": "Representative Office",
+      "content": "9-11 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam"
     }
   }
 } 

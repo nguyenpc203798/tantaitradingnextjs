@@ -8,9 +8,9 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: {
     template: "%s | Tantai Trading",
-    default: "Tantai Trading - Professional Business Solutions",
+    default: "Tantai Trading - Professional agricultural business",
   },
-  description: "Providing professional business solutions for companies of all sizes in Vietnam",
+  description: "Providing Professional agricultural business for companies of all sizes in Vietnam",
   keywords: ["business", "trading", "consulting", "vietnam", "ho chi minh", "professional services"],
   authors: [{ name: "Tantai Trading" }],
   creator: "Tantai Trading",
@@ -28,9 +28,33 @@ export const metadata: Metadata = {
       "vi-VN": "/vi-VN",
     },
   },
+  icons: {
+    icon: [
+      { url: '/images/logo/logo.png' },
+      { url: '/images/logo/logo.png', type: 'image/png', sizes: '32x32' },
+      { url: '/images/logo/logo.png', type: 'image/png', sizes: '16x16' },
+    ],
+    apple: [
+      { url: '/images/logo/logo.png' },
+      { url: '/images/logo/logo.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: { url: '/images/logo/logo.png' },
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/images/logo/logo.png',
+      },
+      {
+        rel: 'mask-icon',
+        url: '/images/logo/logo.png',
+        color: '#00843D',
+      },
+    ],
+  },
+  manifest: '/manifest.json',
   openGraph: {
-    title: "Tantai Trading - Professional Business Solutions",
-    description: "Providing professional business solutions for companies of all sizes in Vietnam",
+    title: "Tantai Trading",
+    description: "Providing Professional agricultural business for companies of all sizes in Vietnam",
     url: "https://tantaitrading.com",
     siteName: "Tantai Trading",
     locale: "en_US",
@@ -40,14 +64,14 @@ export const metadata: Metadata = {
         url: "https://tantaitrading.com/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Tantai Trading - Professional Business Solutions",
+        alt: "Tantai Trading - Professional agricultural business",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tantai Trading - Professional Business Solutions",
-    description: "Providing professional business solutions for companies of all sizes in Vietnam",
+    title: "Tantai Trading",
+    description: "Providing Professional agricultural business for companies of all sizes in Vietnam",
     images: ["https://tantaitrading.com/images/twitter-image.jpg"],
   },
   robots: {

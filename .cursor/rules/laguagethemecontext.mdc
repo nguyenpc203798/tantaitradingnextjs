@@ -1,0 +1,31 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Attention to Language Context in English UI Modifications
+
+## Always Check Language Context:
+
+Before modifying or updating any English-language UI text, ensure that you clearly understand the Language Context. Confirm the meaning, tone, and intention of the existing content.
+
+## Maintain Consistency:
+
+All UI text changes should align with the established terminology, style, and voice outlined in the Language Context documentation.
+
+## Update Language Context Upon Changes:
+
+Immediately update the Language Context documentation whenever you introduce or alter UI text. Clearly document what was changed, why, and any implications for translators or future developers.
+
+## Review Language Context Periodically:
+
+Regularly review the Language Context documentation to ensure it accurately reflects current UI elements, language guidelines, and user interaction flows.
+
+## Validation and Approval:
+
+All UI modifications involving textual changes must be validated against the Language Context and approved by a supervisor or language specialist to prevent context-related errors.
+
+
+
+
+Following this rule helps ensure clarity, accuracy, and consistency in English-language user interfaces, improving overall user experience and minimizing errors during localization.

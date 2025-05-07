@@ -56,7 +56,7 @@ const LazyImage = memo(({
   const { isLoading, currentSrc, setIsLoading } = useImageLoader(src, priority);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="h-full w-full">
       <Image
         src={priority ? src : currentSrc}
         alt={alt}
