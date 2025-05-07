@@ -60,9 +60,9 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-  			tantai: {
-  				DEFAULT: 'green-600',
-  				foreground: 'green-800'
+  			green: {
+  				DEFAULT: 'hsl(var(--green))',
+  				foreground: 'hsl(var(--green-foreground))'
   			}
   		},
   		borderRadius: {

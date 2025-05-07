@@ -7,7 +7,7 @@ const CompanyInfo = memo(({ t }: { t: (key: string) => string }) => {
   return (
     <div className="pl-[10%] max-w-[80%]">
       <h3 className="text-lg font-semibold mb-4">Tấn Tài Trading</h3>
-      <p className="text-muted-foreground">
+      <p className="text-justify">
       {t("footer.slogan")}
       </p>
     </div>
@@ -55,7 +55,7 @@ const ContactInfo = memo(({ t }: { t: (key: string) => string }) => {
     <div className="pl-[10%] max-w-[80%]">
       <h3 className="text-lg font-semibold mb-4">{t("nav.contact")}</h3>
       <address className="not-italic text-muted-foreground">
-        <p>{t("footer.contact_info.head_office")}</p>
+        <p className="text-justify">{t("footer.contact_info.head_office")}</p>
         <p className="mt-2">
           <a href="mailto:info@tantaitrading.com" className="hover:text-primary transition-colors">
             {t("footer.contact_info.email")}
@@ -66,7 +66,7 @@ const ContactInfo = memo(({ t }: { t: (key: string) => string }) => {
             {t("footer.contact_info.phone")}
           </a>
         </p>
-        <p>{t("footer.contact_info.response")}</p>
+        <p className="text-justify">{t("footer.contact_info.response")}</p>
       </address>
     </div>
   );
@@ -81,7 +81,7 @@ const RepresentativeOffice = memo(({ t }: { t: (key: string) => string }) => {
     <div className="pl-[10%] max-w-[80%]">
       <h3 className="text-lg font-semibold mb-4">{t("footer.representative_office.title")}</h3>
       <address className="not-italic text-muted-foreground">
-        <p>{t("footer.representative_office.content")}</p>
+        <p className="text-justify">{t("footer.representative_office.content")}</p>
       </address>
     </div>
   );

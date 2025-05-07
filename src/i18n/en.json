@@ -12,7 +12,7 @@
       "cinnamon": "Cinnamon",
       "pepper": "Black Pepper"
     },
-    "news": "News",
+    "news": "News", 
     "contact": "Contact"
   },
   "home": {
@@ -133,36 +133,48 @@
       "title": "About Us",
       "description": "Tantai Trading is a leading company providing professional business solutions in Vietnam. We are dedicated to helping businesses grow and succeed."
     },
-    "story": {
-      "title": "Our Story",
-      "paragraph1": "Founded in 2020, Tantai Trading began with a simple vision: to help Vietnamese businesses unlock their full potential through innovative and effective business solutions.",
-      "paragraph2": "From humble beginnings with a small team of 5 members, we have grown into a company of over 50 dedicated specialists in various fields.",
-      "paragraph3": "Our mission remains unchanged: to provide high-quality, personalized, and effective services that help our clients achieve their business goals."
+    "company_intro": {
+      "title": "Company Introduction",
+      "paragraph1": "Tantai Trading is proud to be a pioneer in the agricultural sector, specializing in investment, production, distribution and export of leading agricultural products in the region. We focus on developing key products such as coffee, pepper, star anise, cinnamon - items that represent the quality and value of Vietnamese agricultural products.",
+      "paragraph2": "With a business philosophy that prioritizes quality, each Tantai Company product is carefully nurtured from cultivation, harvesting to processing and packaging, ensuring international standards. Our network of global customers and partners is a testament to the commitment to quality and trust that the company has built over time.",
+      "paragraph3": "Tantai Company's production system includes a system of modern processing factories in many provinces, combined with a network of purchasing stations spread throughout the provinces. A team of experienced experts and professional management models help us ensure efficient operation, quickly and accurately meeting customer needs in a competitive business environment.",
+      "paragraph4": "We believe that customer satisfaction is the guiding principle for all activities. With the motto \"Quality, Honesty, Happiness,\" Tantai Company not only provides high-quality products but also commits to meeting international standards such as USDA Organic, EU Organic, HACCP, BRCGS, Halal, Kosher, Fairtrade and ISO 22000, ISO 9001 and building sustainable value for the community and the economy.",
+      "image1_alt": "Tantai Company - High quality agricultural products",
+      "image2_alt": "Tantai's agricultural production and processing system"
     },
-    "team": {
-      "title": "Leadership Team",
-      "description": "Our talented and diverse leadership team, with extensive experience across many fields, is the foundation for Tantai Trading's success."
+    "vision_mission": {
+      "title": "Vision & Mission",
+      "vision_title": "Vision",
+      "vision_content": "Tantai Company aims to become a leading enterprise in the field of agricultural products and food in Vietnam, while affirming a solid position in the international market, especially becoming a company owning Vietnamese agricultural products with global brands.",
+      "mission_title": "Mission",
+      "mission_content": "Bringing Vietnamese agricultural values to the world, accompanying farmers to improve production quality, contributing to building a sustainable agricultural economy. The company is committed to continuous innovation to meet the increasingly diverse and demanding needs of global customers."
     },
-    "values": {
+    "core_values": {
       "title": "Core Values",
-      "description": "These values shape every decision and action we take.",
-      "integrity": {
-        "title": "Integrity",
-        "description": "We prioritize honesty and transparency in every interaction with clients and partners."
-      },
-      "innovation": {
-        "title": "Innovation",
-        "description": "We constantly seek new and creative approaches to solve complex challenges."
-      },
-      "excellence": {
-        "title": "Excellence",
-        "description": "We are committed to delivering the highest quality in every aspect of our work."
+      "description": "Values that guide all our activities and decisions",
+      "values": {
+        "quality": {
+          "title": "Reputation and Quality",
+          "description": "Commitment to delivering high-quality products that meet the strict standards of domestic and international markets."
+        },
+        "partnership": {
+          "title": "Sustainable Partnership",
+          "description": "Building long-term relationships with customers, suppliers, and farmers based on trust and mutual benefit."
+        },
+        "innovation": {
+          "title": "Innovation and Development",
+          "description": "Continuously investing in technology, production processes and human resources to improve business efficiency and meet increasingly demanding markets."
+        },
+        "responsibility": {
+          "title": "Community Responsibility",
+          "description": "Supporting rural communities through job creation, enhancing agricultural product value, promoting sustainable economic development."
+        }
       }
     },
     "cta": {
-      "title": "Grow With Us",
-      "description": "Join our team and be part of a success journey.",
-      "button": "Explore Career Opportunities"
+      "title": "Partner With Tantai",
+      "description": "Become a partner or customer of Tantai to grow together and achieve sustainable value.",
+      "button": "Contact Us Now"
     }
   },
   "footer": {

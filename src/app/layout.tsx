@@ -7,14 +7,14 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Tantai Trading",
-    default: "Tantai Trading - Professional agricultural business",
+    template: "%s | Tan Tai Trading",
+    default: "Tan Tai Trading - Professional agricultural business",
   },
   description: "Providing Professional agricultural business for companies of all sizes in Vietnam",
   keywords: ["business", "trading", "consulting", "vietnam", "ho chi minh", "professional services"],
-  authors: [{ name: "Tantai Trading" }],
-  creator: "Tantai Trading",
-  publisher: "Tantai Trading",
+  authors: [{ name: "Tan Tai Trading" }],
+  creator: "Tan Tai Trading",
+  publisher: "Tan Tai Trading",
   formatDetection: {
     email: false,
     address: false,
@@ -53,10 +53,10 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   openGraph: {
-    title: "Tantai Trading",
+    title: "Tan Tai Trading",
     description: "Providing Professional agricultural business for companies of all sizes in Vietnam",
     url: "https://tantaitrading.com",
-    siteName: "Tantai Trading",
+    siteName: "Tan Tai Trading",
     locale: "en_US",
     type: "website",
     images: [
@@ -64,13 +64,13 @@ export const metadata: Metadata = {
         url: "https://tantaitrading.com/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Tantai Trading - Professional agricultural business",
+        alt: "Tan Tai Trading - Professional agricultural business",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tantai Trading",
+    title: "Tan Tai Trading",
     description: "Providing Professional agricultural business for companies of all sizes in Vietnam",
     images: ["https://tantaitrading.com/images/twitter-image.jpg"],
   },

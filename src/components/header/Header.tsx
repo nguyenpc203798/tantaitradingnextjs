@@ -31,37 +31,37 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
         </DropdownMenuTrigger>
         <DropdownMenuContent align="center" className="w-[15rem] p-4 rounded-2xl shadow-lg">
           <DropdownMenuItem asChild>
-            <Link href="/products/coffee" className="w-full cursor-pointer">
+            <Link href="/industry/coffee" className="w-full cursor-pointer">
               {t("nav.products_items.coffee")}
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/products/rubber" className="w-full cursor-pointer">
+            <Link href="/industry/rubber" className="w-full cursor-pointer">
               {t("nav.products_items.rubber")}
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/products/tapioca" className="w-full cursor-pointer">
+            <Link href="/industry/tapioca" className="w-full cursor-pointer">
               {t("nav.products_items.tapioca")}
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/products/cashew" className="w-full cursor-pointer">
+            <Link href="/industry/cashew" className="w-full cursor-pointer">
               {t("nav.products_items.cashew")}
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/products/star-anise" className="w-full cursor-pointer">
+            <Link href="/industry/anise" className="w-full cursor-pointer">
               {t("nav.products_items.star_anise")}
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/products/cinnamon" className="w-full cursor-pointer">
+            <Link href="/industry/cinnamon" className="w-full cursor-pointer">
               {t("nav.products_items.cinnamon")}
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/products/pepper" className="w-full cursor-pointer">
+            <Link href="/industry/pepper" className="w-full cursor-pointer">
               {t("nav.products_items.pepper")}
             </Link>
           </DropdownMenuItem>

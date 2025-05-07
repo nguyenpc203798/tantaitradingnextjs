@@ -63,7 +63,7 @@ const LazyImage = memo(({
         width={width}
         height={height}
         className={cn(
-          "duration-700 ease-in-out",
+          "duration-700 ease-in-out h-full w-full",
           isLoading
             ? "grayscale blur-sm scale-105"
             : "grayscale-0 blur-0 scale-100",

@@ -133,36 +133,48 @@
       "title": "Về Chúng Tôi",
       "description": "Tantai Trading là công ty hàng đầu cung cấp giải pháp kinh doanh chuyên nghiệp tại Việt Nam. Chúng tôi tận tâm giúp các doanh nghiệp phát triển và thành công."
     },
-    "story": {
-      "title": "Câu Chuyện Của Chúng Tôi",
-      "paragraph1": "Được thành lập vào năm 2020, Tantai Trading bắt đầu với một tầm nhìn đơn giản: giúp các doanh nghiệp Việt Nam khai thác tiềm năng đầy đủ của họ thông qua các giải pháp kinh doanh sáng tạo và hiệu quả.",
-      "paragraph2": "Từ những ngày đầu khiêm tốn với một nhóm nhỏ 5 thành viên, chúng tôi đã phát triển thành một công ty có hơn 50 chuyên gia tận tâm trong nhiều lĩnh vực khác nhau.",
-      "paragraph3": "Sứ mệnh của chúng tôi vẫn không thay đổi: cung cấp dịch vụ chất lượng cao, cá nhân hóa và hiệu quả giúp khách hàng đạt được mục tiêu kinh doanh của họ."
+    "company_intro": {
+      "title": "Giới Thiệu Công Ty",
+      "paragraph1": "Công ty Tấn Tài tự hào là đơn vị tiên phong trong lĩnh vực nông nghiệp, chuyên sâu vào đầu tư, sản xuất, phân phối và xuất khẩu các sản phẩm nông nghiệp hàng đầu khu vực. Chúng tôi tập trung phát triển các sản phẩm chủ lực như cà phê, hạt tiêu, hoa hồi, quế – những mặt hàng đại diện cho chất lượng và giá trị nông sản Việt Nam.",
+      "paragraph2": "Với triết lý kinh doanh đặt chất lượng lên hàng đầu, mỗi sản phẩm của Công ty Tấn Tài được chăm sóc kỹ lưỡng từ giai đoạn trồng trọt, thu hoạch đến chế biến và đóng gói, đảm bảo đạt tiêu chuẩn quốc tế. Mạng lưới khách hàng và đối tác toàn cầu của chúng tôi là minh chứng cho cam kết về chất lượng và sự tín nhiệm mà công ty đã xây dựng qua thời gian.",
+      "paragraph3": "Hệ thống sản xuất của Công ty Tấn Tài bao gồm hệ thống các nhà máy chế biến hiện đại tại nhiều tình thành, kết hợp với mạng lưới trạm thu mua trải dài khắp các tỉnh thành. Đội ngũ chuyên gia giàu kinh nghiệm và mô hình quản lý chuyên nghiệp giúp chúng tôi đảm bảo sự vận hành hiệu quả, đáp ứng nhanh chóng và chính xác nhu cầu của khách hàng trong môi trường kinh doanh đầy cạnh tranh.",
+      "paragraph4": "Chúng tôi tin rằng sự hài lòng của khách hàng là kim chỉ nam cho mọi hoạt động. Với phương châm \"Chất lượng, Trung thực, Hạnh phúc,\" Công ty Tấn Tài không chỉ cung cấp sản phẩm chất lượng cao mà còn cam kết đáp ứng các tiêu chuẩn quốc tế như USDA Organic, EU Organic, HACCP, BRCGS, Halal, Kosher, Fairtrade and ISO 22000, ISO 9001 và xây dựng giá trị bền vững cho cộng đồng và nền kinh tế.",
+      "image1_alt": "Công ty Tấn Tài - Hình ảnh nông sản chất lượng cao",
+      "image2_alt": "Hệ thống sản xuất và chế biến nông sản Tấn Tài"
     },
-    "team": {
-      "title": "Đội Ngũ Lãnh Đạo",
-      "description": "Nhóm lãnh đạo tài năng và đa dạng của chúng tôi, với kinh nghiệm rộng rãi trong nhiều lĩnh vực, là nền tảng cho sự thành công của Tantai Trading."
+    "vision_mission": {
+      "title": "Tầm Nhìn & Sứ Mệnh",
+      "vision_title": "Tầm Nhìn",
+      "vision_content": "Công ty Tấn Tài hướng đến trở thành doanh nghiệp hàng đầu trong lĩnh vực nông sản và lương thực tại Việt Nam, đồng thời khẳng định vị thế vững chắc trên thị trường quốc tế, đặc biệt trở thành Công ty sở hữu dòng sản phẩm nông sản Việt thương hiệu toàn cầu.",
+      "mission_title": "Sứ Mệnh",
+      "mission_content": "Mang giá trị nông sản Việt vươn xa ra thế giới, đồng hành cùng bà con nông dân nâng cao chất lượng sản xuất, góp phần xây dựng nền kinh tế nông nghiệp bền vững. Công ty cam kết không ngừng đổi mới để đáp ứng nhu cầu ngày càng đa dạng và khắt khe của khách hàng toàn cầu."
     },
-    "values": {
+    "core_values": {
       "title": "Giá Trị Cốt Lõi",
-      "description": "Những giá trị này định hình mọi quyết định và hành động của chúng tôi.",
-      "integrity": {
-        "title": "Chính Trực",
-        "description": "Chúng tôi đặt sự trung thực và minh bạch lên hàng đầu trong mọi tương tác với khách hàng và đối tác."
-      },
-      "innovation": {
-        "title": "Đổi Mới",
-        "description": "Chúng tôi không ngừng tìm kiếm những cách tiếp cận mới và sáng tạo để giải quyết các thách thức phức tạp."
-      },
-      "excellence": {
-        "title": "Xuất Sắc",
-        "description": "Chúng tôi cam kết mang đến chất lượng tốt nhất trong mọi khía cạnh công việc của mình."
+      "description": "Những giá trị định hướng cho mọi hoạt động và quyết định của chúng tôi",
+      "values": {
+        "quality": {
+          "title": "Uy tín và chất lượng",
+          "description": "Cam kết mang đến sản phẩm chất lượng cao, đáp ứng các tiêu chuẩn nghiêm ngặt của thị trường trong và ngoài nước."
+        },
+        "partnership": {
+          "title": "Hợp tác bền vững",
+          "description": "Xây dựng mối quan hệ lâu dài với khách hàng, nhà cung cấp, bà con nông dân dựa trên sự tin cậy và đôi bên cùng có lợi."
+        },
+        "innovation": {
+          "title": "Đổi mới và phát triển",
+          "description": "Không ngừng đầu tư vào công nghệ, quy trình sản xuất và đội ngũ nhân sự để nâng cao hiệu quả kinh doanh và đáp ứng thị trường ngày càng khắt khe."
+        },
+        "responsibility": {
+          "title": "Trách nhiệm cộng đồng",
+          "description": "Hỗ trợ cộng đồng nông thôn thông qua tạo việc làm, nâng cao giá trị nông sản, thúc đẩy phát triển kinh tế bền vững."
+        }
       }
     },
     "cta": {
-      "title": "Hãy Cùng Chúng Tôi Phát Triển",
-      "description": "Tham gia nhóm của chúng tôi và là một phần của hành trình thành công.",
-      "button": "Tìm Hiểu Cơ Hội Nghề Nghiệp"
+      "title": "Đồng Hành Cùng Tấn Tài",
+      "description": "Trở thành đối tác hoặc khách hàng của Tấn Tài để cùng nhau phát triển và đạt được giá trị bền vững.",
+      "button": "Liên Hệ Ngay"
     }
   },
   "footer": {

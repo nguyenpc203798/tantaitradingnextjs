@@ -23,7 +23,7 @@ export function generateSeoMetadata({
   description,
   keywords = [],
   ogImage = "https://tantaitrading.com/images/og-image.jpg",
-  ogImageAlt = "Tantai Trading",
+  ogImageAlt = "Tan Tai Trading",
   ogImageWidth = 1200,
   ogImageHeight = 630,
   twitterImage = "https://tantaitrading.com/images/twitter-image.jpg",
@@ -31,7 +31,7 @@ export function generateSeoMetadata({
   noIndex = false,
 }: SeoProps): Metadata {
   // Tạo title với template
-  const fullTitle = `${title} | Tantai Trading`;
+  const fullTitle = `${title} | Tan Tai Trading`;
   
   // Xây dựng metadata object
   const metadata: Metadata = {
@@ -53,7 +53,7 @@ export function generateSeoMetadata({
       title: fullTitle,
       description: description,
       url: canonical ? `https://tantaitrading.com${canonical}` : "https://tantaitrading.com",
-      siteName: "Tantai Trading",
+      siteName: "Tan Tai Trading",
       locale: "en_US",
       type: "website",
       images: [
