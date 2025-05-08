@@ -1,0 +1,28 @@
+{
+  "name": "Tantai Trading",
+  "short_name": "Tantai",
+  "description": "Tantai Trading - Cung cấp nông sản chuyên nghiệp cho khách hàng ở mọi quy mô",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a3d0a",
+  "icons": [
+    {
+      "src": "/images/logo/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "vi",
+  "orientation": "portrait-primary",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+} 

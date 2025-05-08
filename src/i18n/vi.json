@@ -195,5 +195,92 @@
       "title": "Văn Phòng Đại diện",
       "content": " 9-11 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam"
     }
+  },
+  "news": {
+    "title": "Tin Tức Nông Sản",
+    "description": "Cập nhật thông tin mới nhất về thị trường, xu hướng và sản phẩm nông nghiệp",
+    "featured_news": {
+      "title": "Tin Tức Nổi Bật",
+      "description": "Những tin tức quan trọng và cập nhật mới nhất về thị trường nông sản trong nước và quốc tế"
+    },
+    "news_list": {
+      "title": "Tin Tức Nông Sản",
+      "read_more": "Đọc tiếp"
+    },
+    "categories": {
+      "title": "Danh mục",
+      "coffee": "Cà phê",
+      "rubber": "Cao su",
+      "cashew": "Hạt điều",
+      "pepper": "Hạt tiêu",
+      "star_anise": "Hồi",
+      "cinnamon": "Quế",
+      "other": "Nông sản khác"
+    },
+    "search": {
+      "title": "Tìm kiếm",
+      "placeholder": "Tìm kiếm tin tức..."
+    },
+    "latest_news": {
+      "title": "Tin mới nhất"
+    },
+    "tags": {
+      "title": "Thẻ tag",
+      "items": ["Cà phê", "Xuất khẩu", "Cao su", "Nông sản", "Hạt điều", "Hồ tiêu", "Giá cả", "Thị trường", "Nông nghiệp"]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Liên Hệ",
+      "description": "Liên hệ với chúng tôi để được tư vấn và hỗ trợ về các sản phẩm nông sản. Tantai Trading luôn sẵn sàng phục vụ quý khách."
+    },
+    "info": {
+      "title": "Thông Tin Liên Hệ",
+      "description": "Hãy liên hệ với chúng tôi qua các kênh thông tin bên dưới hoặc gửi yêu cầu thông qua biểu mẫu.",
+      "head_office": "Trụ sở chính",
+      "email": "Email",
+      "phone": "Điện thoại",
+      "support_time": "Thời gian hỗ trợ"
+    },
+    "form": {
+      "title": "Gửi Thông Tin Liên Hệ",
+      "description": "Vui lòng điền đầy đủ thông tin bên dưới, chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.",
+      "name": "Họ và tên",
+      "name_placeholder": "Nhập họ và tên của bạn",
+      "email": "Email",
+      "email_placeholder": "Nhập địa chỉ email của bạn",
+      "subject": "Tiêu đề",
+      "subject_placeholder": "Nhập tiêu đề liên hệ",
+      "message": "Nội dung",
+      "message_placeholder": "Nhập nội dung tin nhắn",
+      "submit": "Gửi thông tin",
+      "submitting": "Đang gửi...",
+      "success_message": "Thông tin của bạn đã được gửi thành công. Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.",
+      "errors": {
+        "name_required": "Vui lòng nhập họ và tên",
+        "email_required": "Vui lòng nhập địa chỉ email",
+        "email_invalid": "Địa chỉ email không hợp lệ",
+        "subject_required": "Vui lòng nhập tiêu đề",
+        "message_required": "Vui lòng nhập nội dung tin nhắn",
+        "submit_failed": "Có lỗi xảy ra khi gửi thông tin. Vui lòng thử lại sau."
+      }
+    },
+    "newsletter": {
+      "title": "Đăng Ký Nhận Tin",
+      "description": "Đăng ký nhận bản tin của chúng tôi để cập nhật thông tin mới nhất về thị trường nông sản và các ưu đãi đặc biệt.",
+      "email_placeholder": "Nhập địa chỉ email của bạn",
+      "subscribe": "Đăng ký ngay",
+      "submitting": "Đang đăng ký...",
+      "success_message": "Cảm ơn bạn đã đăng ký nhận tin từ chúng tôi!",
+      "errors": {
+        "email_required": "Vui lòng nhập địa chỉ email",
+        "email_invalid": "Địa chỉ email không hợp lệ",
+        "submit_failed": "Có lỗi xảy ra khi đăng ký. Vui lòng thử lại sau."
+      }
+    },
+    "map": {
+      "title": "Bản Đồ",
+      "description": "Văn phòng đại diện của chúng tôi tại Thành phố Hồ Chí Minh"
+    }
   }
 } 

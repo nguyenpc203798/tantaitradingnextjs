@@ -1,7 +1,7 @@
 'use client';
 
 import MainLayout from "@/layouts/MainLayout";
-import AboutHero from "@/components/pages/about/AboutHero";
+import PageHero from "@/components/ui/PageHero";
 import AboutCompanyIntro from "@/components/pages/about/AboutCompanyIntro";
 import AboutVisionMission from "@/components/pages/about/AboutVisionMission";
 import AboutCoreValues from "@/components/pages/about/AboutCoreValues";
@@ -11,7 +11,12 @@ const AboutPage = () => {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <AboutHero />
+      <PageHero 
+        i18nKey={{
+          title: 'about.hero.title',
+          description: 'about.hero.description'
+        }}
+      />
       
       {/* Company Introduction Section */}
       <AboutCompanyIntro />

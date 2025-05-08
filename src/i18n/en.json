@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "products": "Products",
+    "products": "Category",
     "products_items": {
       "coffee": "Coffee",
       "rubber": "Natural Rubber",
@@ -194,6 +194,93 @@
     "representative_office": {
       "title": "Representative Office",
       "content": "9-11 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam"
+    }
+  },
+  "news": {
+    "title": "Agricultural News",
+    "description": "Latest updates on markets, trends, and agricultural products",
+    "featured_news": {
+      "title": "Featured News",
+      "description": "Important news and latest updates on domestic and international agricultural markets"
+    },
+    "news_list": {
+      "title": "Agricultural News",
+      "read_more": "Read more"
+    },
+    "categories": {
+      "title": "Categories",
+      "coffee": "Coffee",
+      "rubber": "Natural Rubber",
+      "cashew": "Cashew Nuts",
+      "pepper": "Black Pepper",
+      "star_anise": "Star Anise",
+      "cinnamon": "Cinnamon",
+      "other": "Other Agricultural Products"
+    },
+    "search": {
+      "title": "Search",
+      "placeholder": "Search for news..."
+    },
+    "latest_news": {
+      "title": "Latest News"
+    },
+    "tags": {
+      "title": "Tags",
+      "items": ["Coffee", "Export", "Rubber", "Agriculture", "Cashew", "Pepper", "Pricing", "Market", "Farming"]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "Contact us for consultation and support on agricultural products. Tantai Trading is always ready to serve you."
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "Please contact us through the channels below or send a request through the form.",
+      "head_office": "Head Office",
+      "email": "Email",
+      "phone": "Phone",
+      "support_time": "Support Time"
+    },
+    "form": {
+      "title": "Send Contact Information",
+      "description": "Please fill in the information below, we will contact you as soon as possible.",
+      "name": "Full Name",
+      "name_placeholder": "Enter your full name",
+      "email": "Email",
+      "email_placeholder": "Enter your email address",
+      "subject": "Subject",
+      "subject_placeholder": "Enter your contact subject",
+      "message": "Message",
+      "message_placeholder": "Enter your message",
+      "submit": "Send Information",
+      "submitting": "Sending...",
+      "success_message": "Your information has been sent successfully. We will contact you as soon as possible.",
+      "errors": {
+        "name_required": "Please enter your full name",
+        "email_required": "Please enter your email address",
+        "email_invalid": "Invalid email address",
+        "subject_required": "Please enter the subject",
+        "message_required": "Please enter your message",
+        "submit_failed": "An error occurred while sending the information. Please try again later."
+      }
+    },
+    "newsletter": {
+      "title": "Subscribe to Newsletter",
+      "description": "Subscribe to our newsletter to get the latest information on agricultural markets and special offers.",
+      "email_placeholder": "Enter your email address",
+      "subscribe": "Subscribe Now",
+      "submitting": "Subscribing...",
+      "success_message": "Thank you for subscribing to our newsletter!",
+      "errors": {
+        "email_required": "Please enter your email address",
+        "email_invalid": "Invalid email address",
+        "submit_failed": "An error occurred while subscribing. Please try again later."
+      }
+    },
+    "map": {
+      "title": "Map",
+      "description": "Our representative office in Ho Chi Minh City"
     }
   }
 } 
