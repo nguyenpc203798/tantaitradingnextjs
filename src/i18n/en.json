@@ -177,6 +177,10 @@
       "button": "Contact Us Now"
     }
   },
+  "theme_switcher": {
+    "dark_mode": "Enable dark mode",
+    "light_mode": "Enable light mode"
+  },
   "footer": {
     "link": "Links",
     "slogan": "Providing professional agricultural products to customers of all sizes.",

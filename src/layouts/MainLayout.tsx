@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 import { useTheme } from "@/context/ThemeContext";
 
 interface MainLayoutProps {
@@ -32,6 +33,7 @@ function MainLayout({ children }: MainLayoutProps) {
         {children}
       </main>
       <Footer />
+      <ScrollToTop threshold={600} />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { memo, useCallback } from "react";
 import { useTheme } from "@/context/ThemeContext";
+import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -17,7 +18,8 @@ ThemeIcon.displayName = "ThemeIcon";
 
 // Tách phần tooltip content thành component riêng (SRP)
 const ThemeTooltipText = memo(({ theme }: { theme: string }) => {
-  return <p>{theme === "light" ? "Bật chế độ tối" : "Bật chế độ sáng"}</p>;
+  const { t } = useLanguage();
+  return <p>{theme === "light" ? t("theme_switcher.dark_mode") : t("theme_switcher.light_mode")}</p>;
 });
 
 ThemeTooltipText.displayName = "ThemeTooltipText";
@@ -25,6 +27,7 @@ ThemeTooltipText.displayName = "ThemeTooltipText";
 // Component chính
 const ThemeSwitcher = memo(() => {
   const { theme, setTheme } = useTheme();
+  const { t } = useLanguage();
 
   // useCallback để tối ưu hóa hàm xử lý sự kiện
   const handleToggleTheme = useCallback(() => {
@@ -39,11 +42,11 @@ const ThemeSwitcher = memo(() => {
             variant="ghost"
             size="icon"
             onClick={handleToggleTheme}
-            aria-label={theme === "light" ? "Bật chế độ tối" : "Bật chế độ sáng"}
+            aria-label={theme === "light" ? t("theme_switcher.dark_mode") : t("theme_switcher.light_mode")}
           >
             <ThemeIcon theme={theme} />
           </Button>
-        </TooltipTrigger>
+        </TooltipTrigger> 
         <TooltipContent>
           <ThemeTooltipText theme={theme} />
         </TooltipContent>

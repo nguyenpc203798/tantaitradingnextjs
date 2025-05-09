@@ -177,6 +177,10 @@
       "button": "Liên Hệ Ngay"
     }
   },
+  "theme_switcher": {
+    "dark_mode": "Bật chế độ tối",
+    "light_mode": "Bật chế độ sáng"
+  },
   "footer": {
     "link": "Liên kết",
     "slogan": "Cung cấp nông sản chuyên nghiệp cho khách hàng ở mọi quy mô.",

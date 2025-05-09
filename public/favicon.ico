@@ -1,1 +1,8 @@
- 
+# favicon.ico cần được tạo từ logo.png
+
+Đây là file giữ chỗ. Vui lòng tạo file favicon.ico thực sự bằng cách chuyển đổi file logo.png sang định dạng .ico sử dụng công cụ trực tuyến như:
+- https://www.favicon-generator.org/
+- https://convertio.co/png-ico/
+- https://favicon.io/favicon-converter/
+
+Sau đó thay thế file này bằng file favicon.ico đã tạo. 
