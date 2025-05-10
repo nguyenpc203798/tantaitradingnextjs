@@ -133,7 +133,7 @@ const NewsSection = memo(() => {
                   <div className="h-[20rem]">
                     <LazyImage
                       alt={item.alt}
-                      className="rounded-[2rem] h-full w-full object-cover"
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                       src={item.image}
                       width={600}
                       height={400}
@@ -145,7 +145,7 @@ const NewsSection = memo(() => {
                   <h3 className="text-[15px] font-bold leading-tight">
                     {item.title}
                   </h3>
-                  <button className="bg-[#1a3d0a] text-white text-[13px] px-8 py-2 rounded-full mt-2">
+                  <button className="bg-[#1a3d0a] text-white text-[13px] px-8 py-2 rounded-full mt-2 transition-all duration-300 hover:bg-[#2a5d1a] hover:shadow-lg">
                     {t('home.news_section.view_more')}
                   </button>
                 </SwiperSlide>
@@ -170,11 +170,18 @@ const NewsSection = memo(() => {
                 border-radius: 50%;
                 background: #a5c7a5; /* Màu xanh nhạt */
                 opacity: 1;
-                transition: background 0.3s;
+                transition: all 0.3s ease;
+                cursor: pointer;
+              }
+              
+              .news-swiper .swiper-pagination-bullet:hover {
+                transform: scale(1.2);
+                background: #8ab88a;
               }
               
               .news-swiper .swiper-pagination-bullet-active {
                 background: #1a3d0a; /* Màu xanh đậm */
+                transform: scale(1.2);
               }
               
               /* Ẩn pagination bullets thừa */

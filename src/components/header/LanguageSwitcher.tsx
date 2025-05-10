@@ -12,7 +12,7 @@ LanguageText.displayName = "LanguageText";
 
 // Tách phần tooltip content thành component riêng (SRP)
 const LanguageTooltipText = memo(({ language }: { language: string }) => {
-  return <p>{language === "en" ? "Chuyển sang tiếng Việt" : "Switch to English"}</p>;
+  return <p>{language === "en" ? "Switch to English" : "Chuyển sang tiếng Việt"}</p>;
 });
 
 LanguageTooltipText.displayName = "LanguageTooltipText";
@@ -32,9 +32,9 @@ const LanguageSwitcher = memo(() => {
         <TooltipTrigger asChild>
           <Button
             variant="ghost"
-            size="sm"
+            size="icon"
             onClick={handleToggleLanguage}
-            aria-label={language === "en" ? "Chuyển sang tiếng Việt" : "Switch to English"}
+            aria-label={language === "en" ? "Switch to English" : "Chuyển sang tiếng Việt"}
           >
             <LanguageText language={language} />
           </Button>

@@ -28,7 +28,7 @@ const MobileMenu = memo(({
   };
 
   return (
-    <div className={`md:hidden bg-background border-b border-border overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+    <div className={`md:hidden blur-bg overflow-hidden rounded-[2rem] mt-1 transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
       <nav className="container mx-auto px-16 py-4 flex flex-col space-y-4">
         <Link 
           href="/" 

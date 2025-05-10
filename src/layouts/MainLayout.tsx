@@ -29,7 +29,7 @@ function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className={`min-h-screen flex flex-col ${themeClass}`}>
       <Header />
-      <main className="flex-grow pt-16">
+      <main className="flex-grow">
         {children}
       </main>
       <Footer />

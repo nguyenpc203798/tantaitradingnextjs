@@ -72,10 +72,10 @@ const ProductsSection = memo(() => {
   ];
 
   return (
-    <section id="nghanhhang" className="bg-[#e7ece5] py-20">
+    <section id="nghanhhang" className="bg-backgroundprimary py-20">
       <div className="container mx-auto px-4">
         <motion.h1 
-          className="text-center text-black font-extrabold text-[3rem] mb-8 leading-tight"
+          className="text-center text-foreground font-extrabold text-[3rem] mb-8 leading-tight"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}

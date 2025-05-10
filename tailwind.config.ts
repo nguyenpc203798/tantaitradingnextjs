@@ -24,6 +24,7 @@ const config: Config = {
   			input: 'var(--input)',
   			ring: 'var(--ring)',
   			background: 'var(--background)',
+  			backgroundprimary: 'var(--background-primary)',
   			foreground: 'var(--foreground)',
   			primary: {
   				DEFAULT: 'var(--primary)',
@@ -63,7 +64,12 @@ const config: Config = {
   			green: {
   				DEFAULT: 'var(--green)',
   				foreground: 'var(--green-foreground)'
-  			}
+  			},
+            blur: {
+                DEFAULT: 'var(--blur-bg)',
+                light: '#ffffff',
+                dark: '#000000'
+            }
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
