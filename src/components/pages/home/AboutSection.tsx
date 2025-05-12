@@ -38,7 +38,7 @@ const AboutSection = memo(() => {
           variants={staggerChildren}
         >
           <motion.h2 
-            className="text-foreground font-extrabold text-[2rem] lg:text-[3rem] mb-3 leading-tight"
+            className="text-center md:text-left"
             variants={fadeInUp}
           >
             {t('home.about_section.title')}
@@ -48,7 +48,7 @@ const AboutSection = memo(() => {
               className="flex flex-col justify-between w-full lg:w-1/2"
               variants={fadeInUp}
             >
-              <p className="text-muted-foreground w-full leading-tight mb-8 text-justify">
+              <p className="w-full leading-tight mb-8">
                 {t('home.about_section.main_description')}
               </p>
               <div className="h-[20rem] lg:h-[40rem] xl:h-[50rem] overflow-hidden rounded-[2rem]">
@@ -75,19 +75,19 @@ const AboutSection = memo(() => {
                     height={400}
                   />
                 </div>
-                <p className="text-muted-foreground leading-tight mb-12 text-justify">
+                <p className=" leading-tight mb-12">
                   {t('home.about_section.secondary_description')}
                 </p>
               </div>
               <motion.div 
-                className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-muted-foreground"
+                className="grid grid-cols-1 sm:grid-cols-3 gap-10 "
                 variants={staggerChildren}
               >
                 <motion.div variants={fadeInUp}>
                   <h3 className="text-foreground font-extrabold mb-1 leading-tight text-[14px]">
                     {t('home.about_section.growth_strategies.export_growth.title')}
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-justify">
+                  <ul className="list-disc list-inside space-y-1">
                     <li>
                       {t('home.about_section.growth_strategies.export_growth.items.0')}
                     </li>
@@ -100,7 +100,7 @@ const AboutSection = memo(() => {
                   <h3 className="text-foreground font-extrabold mb-1 leading-tight text-[14px]">
                     {t('home.about_section.growth_strategies.warehouse_investment.title')}
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-justify">
+                  <ul className="list-disc list-inside space-y-1">
                     <li>
                       {t('home.about_section.growth_strategies.warehouse_investment.items.0')}
                     </li>
@@ -113,7 +113,7 @@ const AboutSection = memo(() => {
                   <h3 className="text-foreground font-extrabold mb-1 leading-tight text-[14px]">
                     {t('home.about_section.growth_strategies.warehouse_service.title')}
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-justify">
+                  <ul className="list-disc list-inside space-y-1">
                     <li>
                       {t('home.about_section.growth_strategies.warehouse_service.items.0')}
                     </li>
@@ -127,41 +127,41 @@ const AboutSection = memo(() => {
           </div>
         </motion.div>
         <motion.div 
-          className="flex flex-wrap justify-between text-center"
+          className="flex flex-wrap justify-between"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerChildren}
         >
           <motion.div className="w-1/2 md:w-1/4 mb-12 md:mb-0" variants={fadeInUp}>
-            <p className="text-[40px] sm:text-[50px] font-semibold leading-none text-foreground">
+            <p className="text-center text-[40px] sm:text-[50px] font-semibold leading-none text-foreground">
               {t('home.about_section.stats.company')}
             </p>
-            <p className="text-muted-foreground/60 mt-1">
+            <p className="/60 mt-1 text-center">
               {t('home.about_section.stats.company_subtitle')}
             </p>
           </motion.div>
           <motion.div className="w-1/2 md:w-1/4 mb-12 md:mb-0" variants={fadeInUp}>
-            <p className="text-[40px] sm:text-[50px] font-semibold leading-none text-foreground">
+            <p className="text-center text-[40px] sm:text-[50px] font-semibold leading-none text-foreground">
               {t('home.about_section.stats.bags_per_year')}
             </p>
-            <p className="text-muted-foreground/60 mt-1">
+            <p className="/60 mt-1 text-center">
               {t('home.about_section.stats.bags_subtitle')}
             </p>
           </motion.div>
           <motion.div className="w-1/2 md:w-1/4 mb-6 md:mb-0" variants={fadeInUp}>
-            <p className="text-[40px] sm:text-[50px] font-semibold leading-none text-foreground">
+            <p className="text-center text-[40px] sm:text-[50px] font-semibold leading-none text-foreground">
               {t('home.about_section.stats.tons_per_year')}
             </p>
-            <p className="text-muted-foreground/60 mt-1">
+            <p className="/60 mt-1 text-center">
               {t('home.about_section.stats.tons_subtitle')}
             </p>
           </motion.div>
           <motion.div className="w-1/2 md:w-1/4" variants={fadeInUp}>
-            <p className="text-[40px] sm:text-[50px] font-semibold leading-none text-foreground">
+            <p className="text-center text-[40px] sm:text-[50px] font-semibold leading-none text-foreground">
               {t('home.about_section.stats.revenue')}
             </p>
-            <p className="text-muted-foreground/60 mt-1">
+            <p className="/60 mt-1 text-center">
               {t('home.about_section.stats.revenue_subtitle')}
             </p>
           </motion.div>

@@ -28,7 +28,7 @@ const AboutVisionMission = memo(() => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16 bg-muted/50">
+    <section className="py-16 bg-backgroundprimary">
       <div className="container mx-auto px-4">
         <motion.div 
           className="max-w-4xl mx-auto"
@@ -38,7 +38,7 @@ const AboutVisionMission = memo(() => {
           variants={staggerChildren}
         >
           <motion.h2 
-            className="text-3xl font-bold text-center mb-12"
+            className="text-center"
             variants={fadeInUp}
           >
             {t("about.vision_mission.title")}
@@ -50,7 +50,7 @@ const AboutVisionMission = memo(() => {
               variants={fadeInUp}
             >
               <h3 className="text-2xl font-semibold mb-4">{t("about.vision_mission.vision_title")}</h3>
-              <p className="text-muted-foreground text-justify">
+              <p>
                 {t("about.vision_mission.vision_content")}
               </p>
             </motion.div>
@@ -60,9 +60,12 @@ const AboutVisionMission = memo(() => {
               variants={fadeInUp}
             >
               <h3 className="text-2xl font-semibold mb-4">{t("about.vision_mission.mission_title")}</h3>
-              <p className="text-muted-foreground text-justify">
-                {t("about.vision_mission.mission_content")}
-              </p>
+              <ul className="space-y-3 list-disc pl-5">
+                <li>{t("about.vision_mission.mission_items.item1")}</li>
+                <li>{t("about.vision_mission.mission_items.item2")}</li>
+                <li>{t("about.vision_mission.mission_items.item3")}</li>
+                <li>{t("about.vision_mission.mission_items.item4")}</li>
+              </ul>
             </motion.div>
           </motion.div>
         </motion.div>

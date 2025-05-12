@@ -72,7 +72,7 @@ const AboutCoreValues = memo(() => {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20 bg-backgroundprimary">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-12"
@@ -82,13 +82,12 @@ const AboutCoreValues = memo(() => {
           variants={staggerChildren}
         >
           <motion.h2 
-            className="text-3xl font-bold mb-6"
             variants={fadeInUp}
           >
             {t("about.core_values.title")}
           </motion.h2>
           <motion.p 
-            className="text-muted-foreground max-w-3xl mx-auto"
+            className="text-center text-muted-foreground max-w-3xl mx-auto"
             variants={fadeInUp}
           >
             {t("about.core_values.description")}
@@ -105,7 +104,7 @@ const AboutCoreValues = memo(() => {
           {coreValues.map((value) => (
             <motion.div 
               key={value.key} 
-              className="bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-card border border-border rounded-[2rem] p-6 shadow-sm hover:shadow-md transition-shadow"
               variants={fadeInUp}
             >
               <h3 className="text-xl font-semibold mb-3">{value.title}</h3>

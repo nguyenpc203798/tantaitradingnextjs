@@ -5,7 +5,7 @@ import PageHero from "@/components/ui/PageHero";
 import AboutCompanyIntro from "@/components/pages/about/AboutCompanyIntro";
 import AboutVisionMission from "@/components/pages/about/AboutVisionMission";
 import AboutCoreValues from "@/components/pages/about/AboutCoreValues";
-import AboutCallToAction from "@/components/pages/about/AboutCallToAction";
+// import AboutCallToAction from "@/components/pages/about/AboutCallToAction";
 
 const AboutPage = () => {
   return (
@@ -28,7 +28,7 @@ const AboutPage = () => {
       <AboutCoreValues />
       
       {/* Call to Action Section */}
-      <AboutCallToAction />
+      {/* <AboutCallToAction /> */}
     </MainLayout>
   );
 };

@@ -92,8 +92,8 @@ RepresentativeOffice.displayName = "RepresentativeOffice";
 // Tách phần Copyright thành component riêng (SRP)
 const Copyright = memo(({ t }: { t: (key: string) => string }) => {
   return (
-    <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-      <p>{t("footer.copyright")}</p>
+    <div className="border-t border-border mt-8 pt-8 text-muted-foreground">
+      <p className="text-center">{t("footer.copyright")}</p>
     </div>
   );
 });

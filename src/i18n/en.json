@@ -145,29 +145,35 @@
     "vision_mission": {
       "title": "Vision & Mission",
       "vision_title": "Vision",
-      "vision_content": "Tantai Company aims to become a leading enterprise in the field of agricultural products and food in Vietnam, while affirming a solid position in the international market, especially becoming a company owning Vietnamese agricultural products with global brands.",
+      "vision_content": "With pioneering aspirations and a sustainable development strategy, Tantai connects the domestic market with international networks, establishing Vietnamese agricultural products as a national brand in the global supply chain.",
       "mission_title": "Mission",
-      "mission_content": "Bringing Vietnamese agricultural values to the world, accompanying farmers to improve production quality, contributing to building a sustainable agricultural economy. The company is committed to continuous innovation to meet the increasingly diverse and demanding needs of global customers."
+      "mission_content": "Revolutionizing Vietnam's agricultural industry through investment in agricultural warehouse services. Ensuring transparency and standardization from procurement to export, building solid trust with partners. Optimizing operations, reducing costs based on smart warehouse and logistics systems. Elevating Vietnamese agricultural products, bringing coffee and key products to the world market, aligning with the national sustainable agricultural development strategy.",
+      "mission_items": {
+        "item1": "Revolutionizing Vietnam's agricultural industry through investment in agricultural warehouse services",
+        "item2": "Ensuring transparency and standardization from procurement to export, building solid trust with partners",
+        "item3": "Optimizing operations, reducing costs based on smart warehouse and logistics systems",
+        "item4": "Elevating Vietnamese agricultural products, bringing coffee and key products to the world market, aligning with the national sustainable agricultural development strategy"
+      }
     },
     "core_values": {
       "title": "Core Values",
       "description": "Values that guide all our activities and decisions",
       "values": {
         "quality": {
-          "title": "Reputation and Quality",
-          "description": "Commitment to delivering high-quality products that meet the strict standards of domestic and international markets."
+          "title": "Quality & Reputation",
+          "description": "Ensuring agricultural products (coffee, rubber, and other commodities) meet international standards, building reputation through transparent processes and reliable trade."
         },
         "partnership": {
           "title": "Sustainable Partnership",
-          "description": "Building long-term relationships with customers, suppliers, and farmers based on trust and mutual benefit."
+          "description": "Establishing long-term relationships with farmers, export businesses, and agricultural organizations, promoting sustainable procurement chains, ensuring stable value for the industry."
         },
         "innovation": {
-          "title": "Innovation and Development",
-          "description": "Continuously investing in technology, production processes and human resources to improve business efficiency and meet increasingly demanding markets."
+          "title": "Innovation & Creativity",
+          "description": "Applying digital technologies (IoT, AI, Blockchain...) to optimize management, logistics, and agricultural product quality."
         },
         "responsibility": {
           "title": "Community Responsibility",
-          "description": "Supporting rural communities through job creation, enhancing agricultural product value, promoting sustainable economic development."
+          "description": "Supporting farmers with capital, farming techniques, technology, and ensuring stable output; providing comprehensive services from procurement to export; focusing on deep processing to increase product value."
         }
       }
     },

@@ -81,7 +81,7 @@
   }
 
   h2 {
-    @apply text-3xl font-bold md:text-4xl;
+    @apply text-foreground font-extrabold text-[2.5rem] lg:text-[3rem] mb-[2rem] leading-tight;
   }
 
   h3 {
@@ -98,6 +98,10 @@
 
   h6 {
     @apply font-bold;
+  }
+
+  p {
+    @apply text-muted-foreground text-justify;
   }
 }
 

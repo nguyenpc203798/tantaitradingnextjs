@@ -145,29 +145,34 @@
     "vision_mission": {
       "title": "Tầm Nhìn & Sứ Mệnh",
       "vision_title": "Tầm Nhìn",
-      "vision_content": "Công ty Tấn Tài hướng đến trở thành doanh nghiệp hàng đầu trong lĩnh vực nông sản và lương thực tại Việt Nam, đồng thời khẳng định vị thế vững chắc trên thị trường quốc tế, đặc biệt trở thành Công ty sở hữu dòng sản phẩm nông sản Việt thương hiệu toàn cầu.",
+      "vision_content": "Với khát vọng tiên phong và chiến lược phát triển bền vững, Tấn Tài kết nối thị trường nội địa với mạng lưới quốc tế, đưa nông sản Việt Nam trở thành thương hiệu quốc gia trong chuỗi cung ứng toàn cầu.",
       "mission_title": "Sứ Mệnh",
-      "mission_content": "Mang giá trị nông sản Việt vươn xa ra thế giới, đồng hành cùng bà con nông dân nâng cao chất lượng sản xuất, góp phần xây dựng nền kinh tế nông nghiệp bền vững. Công ty cam kết không ngừng đổi mới để đáp ứng nhu cầu ngày càng đa dạng và khắt khe của khách hàng toàn cầu."
+      "mission_items": {
+        "item1": "Cách mạng hoá ngành nông nghiệp Việt Nam thông qua đầu tư vào tổng kho dịch vụ nông sản",
+        "item2": "Đảm bảo minh bạch và chuẩn hoá từ thu mua đến xuất khẩu, xây dựng niềm tin vững chắc với đối tác",
+        "item3": "Tối ưu hoá vận hành, giảm chi phí dựa trên hệ thống kho bãi và logistics thông minh",
+        "item4": "Nâng tầm thương hiệu nông sản Việt Nam, đưa cà phê và sản phẩm chủ lực ra thị trường thế giới, đồng hành cùng chiến lược phát triển nông nghiệp bền vững quốc gia"
+      }
     },
     "core_values": {
       "title": "Giá Trị Cốt Lõi",
       "description": "Những giá trị định hướng cho mọi hoạt động và quyết định của chúng tôi",
       "values": {
         "quality": {
-          "title": "Uy tín và chất lượng",
-          "description": "Cam kết mang đến sản phẩm chất lượng cao, đáp ứng các tiêu chuẩn nghiêm ngặt của thị trường trong và ngoài nước."
+          "title": "Chất lượng & Uy tín",
+          "description": "Đảm bảo nông sản (cà phê, cao su và các mặt hàng nông sản khác) đạt chuẩn quốc tế, xây dựng uy tín bằng quy trình minh bạch và thương mại tin cậy."
         },
         "partnership": {
           "title": "Hợp tác bền vững",
-          "description": "Xây dựng mối quan hệ lâu dài với khách hàng, nhà cung cấp, bà con nông dân dựa trên sự tin cậy và đôi bên cùng có lợi."
+          "description": "Thiết lập quan hệ lâu dài với nông dân, doanh nghiệp xuất khẩu và tổ chức nông nghiệp, thúc đẩy chuỗi thu mua bền vững, đảm bảo giá trị ổn định cho ngành."
         },
         "innovation": {
-          "title": "Đổi mới và phát triển",
-          "description": "Không ngừng đầu tư vào công nghệ, quy trình sản xuất và đội ngũ nhân sự để nâng cao hiệu quả kinh doanh và đáp ứng thị trường ngày càng khắt khe."
+          "title": "Đổi mới & Sáng tạo",
+          "description": "Ứng dụng công nghệ số (IoT, AI, Blockchain...) để tối ưu quản lý, logistics và chất lượng nông sản."
         },
         "responsibility": {
           "title": "Trách nhiệm cộng đồng",
-          "description": "Hỗ trợ cộng đồng nông thôn thông qua tạo việc làm, nâng cao giá trị nông sản, thúc đẩy phát triển kinh tế bền vững."
+          "description": "Hỗ trợ nông dân về vốn, kỹ thuật canh tác, công nghệ và đảm bảo đầu ra ổn định; cung cấp dịch vụ trọn gói từ thu mua đến xuất khẩu; định hướng chế biến sâu để gia tăng giá trị sản phẩm."
         }
       }
     },

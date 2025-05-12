@@ -38,7 +38,7 @@ const AboutCompanyIntro = memo(() => {
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerChildren}
         >
-          <motion.div variants={fadeInUp}>
+          <motion.div variants={fadeInUp} className='h-full w-full'>
             <LazyImage 
               src="/images/pages/about/image1.webp"
               alt={t("about.company_intro.image1_alt")}
@@ -48,11 +48,11 @@ const AboutCompanyIntro = memo(() => {
             />
           </motion.div>
           <motion.div className="space-y-6" variants={fadeInUp}>
-            <h2 className="text-3xl font-bold mb-6">{t("about.company_intro.title")}</h2>
-            <p className="text-muted-foreground text-justify">
+            <h2>{t("about.company_intro.title")}</h2>
+            <p className="text-muted-foreground">
               {t("about.company_intro.paragraph1")}
             </p>
-            <p className="text-muted-foreground text-justify">
+            <p className="text-muted-foreground">
               {t("about.company_intro.paragraph2")}
             </p>
           </motion.div>
@@ -66,14 +66,14 @@ const AboutCompanyIntro = memo(() => {
           variants={staggerChildren}
         >
           <motion.div className="space-y-6 order-2 lg:order-1" variants={fadeInUp}>
-            <p className="text-muted-foreground text-justify">
+            <p className="text-muted-foreground">
               {t("about.company_intro.paragraph3")}
             </p>
-            <p className="text-muted-foreground text-justify">
+            <p className="text-muted-foreground">
               {t("about.company_intro.paragraph4")}
             </p>
           </motion.div>
-          <motion.div className="order-1 lg:order-2" variants={fadeInUp}>
+          <motion.div className="order-1 lg:order-2 h-full w-full" variants={fadeInUp}>
             <LazyImage 
               src="/images/pages/about/image2.webp"
               alt={t("about.company_intro.image2_alt")}
