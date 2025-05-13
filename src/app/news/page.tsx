@@ -10,5 +10,6 @@ export const metadata: Metadata = generateSeoMetadata({
 });
 
 export default function News() {
+  // Params sẽ được xử lý ở client component thông qua useSearchParams
   return <NewsPage />;
 } 

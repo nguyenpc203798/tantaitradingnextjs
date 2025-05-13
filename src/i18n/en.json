@@ -208,10 +208,23 @@
   },
   "news": {
     "title": "Agricultural News",
-    "description": "Latest updates on markets, trends, and agricultural products",
-    "featured_news": {
+    "description": "Stay updated with the latest information about markets, trends, and agricultural products",
+    "category": "Category",
+    "category_description": "News about",
+    "tag": "Tag",
+    "tag_description": "News with tag",
+    "search_results": "Search Results",
+    "search_description": "Results for your search query",
+    "not_found": "News not found",
+    "back_to_news": "Back to news page",
+    "no_results": "No matching results found",
+    "by": "Posted by",
+    "market_overview": "Market Overview",
+    "related_news": "Related News",
+    "featured": {
       "title": "Featured News",
-      "description": "Important news and latest updates on domestic and international agricultural markets"
+      "description": "Important updates and the latest news about domestic and international agricultural markets",
+      "read_more": "Read more"
     },
     "news_list": {
       "title": "Agricultural News",
@@ -220,12 +233,12 @@
     "categories": {
       "title": "Categories",
       "coffee": "Coffee",
-      "rubber": "Natural Rubber",
-      "cashew": "Cashew Nuts",
-      "pepper": "Black Pepper",
+      "rubber": "Rubber",
+      "cashew": "Cashew",
+      "pepper": "Pepper",
       "star_anise": "Star Anise",
       "cinnamon": "Cinnamon",
-      "other": "Other Agricultural Products"
+      "other": "Other Products"
     },
     "search": {
       "title": "Search",
@@ -235,8 +248,7 @@
       "title": "Latest News"
     },
     "tags": {
-      "title": "Tags",
-      "items": ["Coffee", "Export", "Rubber", "Agriculture", "Cashew", "Pepper", "Pricing", "Market", "Farming"]
+      "title": "Tags"
     }
   },
   "contact": {

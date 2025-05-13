@@ -109,7 +109,7 @@ const PageHero = memo(({
           </motion.h1>
           {heroDescription && (
             <motion.p 
-              className="text-lg md:text-xl max-w-3xl mx-auto text-center"
+              className="text-white text-lg md:text-xl max-w-3xl mx-auto text-center"
               variants={fadeInUp}
             >
               {heroDescription}

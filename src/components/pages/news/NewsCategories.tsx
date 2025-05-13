@@ -1,10 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { memo } from 'react';
+import { memo, useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import Link from 'next/link';
 import LazyImage from '@/components/LazyImage';
+import { useNewsFilters } from '@/hooks/useNewsFilters';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -27,45 +29,52 @@ const staggerChildren = {
 
 const NewsCategories = memo(() => {
   const { t } = useLanguage();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const [searchTerm, setSearchTerm] = useState('');
+  
+  // Lấy các params từ URL nếu có
+  const categoryParam = searchParams.get('category') || '';
+  const tagParam = searchParams.get('tag') || '';
+  const searchParam = searchParams.get('search') || '';
+  
+  const {
+    categories,
+    tags,
+    latestNews,
+    handleSearch
+  } = useNewsFilters({
+    initialCategory: categoryParam,
+    initialTag: tagParam,
+    initialSearchTerm: searchParam
+  });
 
-  // Danh mục sản phẩm
-  const categories = [
-    { id: 1, name: t('news.categories.coffee'), count: 15, slug: "ca-phe" },
-    { id: 2, name: t('news.categories.rubber'), count: 8, slug: "cao-su" },
-    { id: 3, name: t('news.categories.cashew'), count: 12, slug: "hat-dieu" },
-    { id: 4, name: t('news.categories.pepper'), count: 10, slug: "hat-tieu" },
-    { id: 5, name: t('news.categories.star_anise'), count: 6, slug: "hoi" },
-    { id: 6, name: t('news.categories.cinnamon'), count: 7, slug: "que" },
-    { id: 7, name: t('news.categories.other'), count: 9, slug: "nong-san-khac" },
-  ];
-
-  // Tin tức mới nhất
-  const latestNews = [
-    {
-      id: 1,
-      image: "/images/cohoi/ch1.webp",
-      date: "15/12/2023",
-      title: "Xuất khẩu cà phê Việt Nam đạt kỷ lục mới trong năm 2023",
-      slug: "xuat-khau-ca-phe-viet-nam-dat-ky-luc-moi"
-    },
-    {
-      id: 2,
-      image: "/images/cohoi/ch2.webp",
-      date: "10/12/2023",
-      title: "Thị trường cao su thiên nhiên tăng trưởng tích cực",
-      slug: "thi-truong-cao-su-thien-nhien-tang-truong-tich-cuc"
-    },
-    {
-      id: 3,
-      image: "/images/cohoi/ch3.jpg",
-      date: "05/12/2023",
-      title: "Giá tiêu trong nước tăng mạnh nhờ nhu cầu xuất khẩu",
-      slug: "gia-tieu-trong-nuoc-tang-manh-nho-nhu-cau-xuat-khau"
+  // Cập nhật search term từ URL param khi component mount
+  useEffect(() => {
+    if (searchParam) {
+      setSearchTerm(searchParam);
     }
-  ];
+  }, [searchParam]);
 
-  // Danh sách tags
-  const tags = ["Cà phê", "Xuất khẩu", "Cao su", "Nông sản", "Hạt điều", "Hồ tiêu", "Giá cả", "Thị trường", "Nông nghiệp"];
+  // Xử lý tìm kiếm khi nhấn Enter
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      handleSearch(searchTerm);
+      router.push(`/news?search=${encodeURIComponent(searchTerm)}`);
+    }
+  };
+
+  // Xử lý tìm kiếm khi click vào icon tìm kiếm
+  const handleSearchClick = () => {
+    handleSearch(searchTerm);
+    router.push(`/news?search=${encodeURIComponent(searchTerm)}`);
+  };
+
+  // Thêm ngay sau khi lấy categories từ useNewsFilters
+  // useEffect(() => {
+  //   console.log('Categories trong NewsCategories:', categories);
+  // }, [categories]);
 
   return (
     <motion.div
@@ -78,7 +87,7 @@ const NewsCategories = memo(() => {
       {/* Khối tìm kiếm */}
       <motion.div 
         variants={fadeInUp}
-        className="bg-white rounded-lg shadow-md p-6"
+        className="bg-white rounded-[2rem] shadow-md p-6"
       >
         <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{t('news.search.title')}</h3>
         <div className="relative">
@@ -86,8 +95,15 @@ const NewsCategories = memo(() => {
             type="text"
             placeholder={t('news.search.placeholder')}
             className="w-full py-3 px-4 pr-10 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] focus:border-transparent"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
-          <button className="absolute right-4 top-1/2 transform -translate-y-1/2">
+          <button 
+            className="absolute right-4 top-1/2 transform -translate-y-1/2"
+            onClick={handleSearchClick}
+            aria-label="Search"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -98,15 +114,17 @@ const NewsCategories = memo(() => {
       {/* Khối danh mục */}
       <motion.div 
         variants={fadeInUp}
-        className="bg-white rounded-lg shadow-md p-6"
+        className="bg-white rounded-[2rem] shadow-md p-6"
       >
         <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{t('news.categories.title')}</h3>
         <ul className="space-y-3">
-          {categories.map((category) => (
-            <li key={category.id}>
+          {categories.map((category, index) => (
+            <li key={index}>
               <Link 
-                href={`/news/category/${category.slug}`}
-                className="flex justify-between items-center py-2 border-b border-gray-100 hover:text-[#1a3d0a] transition-colors duration-300"
+                href={`/news?category=${category.slug}`}
+                className={`flex justify-between items-center py-2 border-b border-gray-100 hover:text-[#1a3d0a] transition-colors duration-300 ${
+                  categoryParam === category.slug ? 'text-[#1a3d0a] font-medium' : ''
+                }`}
               >
                 <span>{category.name}</span>
                 <span className="bg-[#e7ece5] text-[#1a3d0a] text-xs px-2 py-1 rounded-full">
@@ -121,7 +139,7 @@ const NewsCategories = memo(() => {
       {/* Khối tin mới nhất */}
       <motion.div 
         variants={fadeInUp}
-        className="bg-white rounded-lg shadow-md p-6"
+        className="bg-white rounded-[2rem] shadow-md p-6"
       >
         <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{t('news.latest_news.title')}</h3>
         <div className="space-y-4">
@@ -131,7 +149,7 @@ const NewsCategories = memo(() => {
               key={news.id}
               className="flex gap-3 group"
             >
-              <div className="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+              <div className="w-20 h-20 flex-shrink-0 rounded-[1rem] overflow-hidden">
                 <LazyImage
                   src={news.image}
                   alt={news.title}
@@ -154,15 +172,19 @@ const NewsCategories = memo(() => {
       {/* Khối thẻ tag */}
       <motion.div 
         variants={fadeInUp}
-        className="bg-white rounded-lg shadow-md p-6"
+        className="bg-white rounded-[2rem] shadow-md p-6"
       >
         <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{t('news.tags.title')}</h3>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <Link 
               key={index} 
-              href={`/news/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`}
-              className="bg-[#e7ece5] text-[#1a3d0a] px-3 py-1 rounded-full text-sm hover:bg-[#1a3d0a] hover:text-white transition-colors duration-300"
+              href={`/news?tag=${tag.toLowerCase().replace(/\s+/g, '-')}`}
+              className={`px-3 py-1 rounded-full text-sm transition-colors duration-300 ${
+                tagParam === tag.toLowerCase().replace(/\s+/g, '-')
+                  ? 'bg-[#1a3d0a] text-white'
+                  : 'bg-[#e7ece5] text-[#1a3d0a] hover:bg-[#1a3d0a] hover:text-white'
+              }`}
             >
               {tag}
             </Link>

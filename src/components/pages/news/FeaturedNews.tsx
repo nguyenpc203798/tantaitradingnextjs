@@ -5,6 +5,7 @@ import { memo } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import LazyImage from '@/components/LazyImage';
 import Link from 'next/link';
+import { useNewsFilters } from '@/hooks/useNewsFilters';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -20,73 +21,44 @@ const staggerChildren = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2
+      staggerChildren: 0.1
     }
   }
 };
 
 const FeaturedNews = memo(() => {
   const { t } = useLanguage();
-
-  // Dữ liệu bài viết nổi bật
-  const featuredNews = [
-    {
-      id: 1,
-      image: "/images/cohoi/ch1.webp",
-      date: "15/12/2023",
-      title: "Xuất khẩu cà phê Việt Nam đạt kỷ lục mới trong năm 2023",
-      category: "Cà phê",
-      excerpt: "Xuất khẩu cà phê Việt Nam đã đạt mức kỷ lục mới với giá trị vượt 4 tỷ USD trong năm 2023, khẳng định vị thế của Việt Nam trên thị trường cà phê toàn cầu.",
-      slug: "xuat-khau-ca-phe-viet-nam-dat-ky-luc-moi"
-    },
-    {
-      id: 2,
-      image: "/images/cohoi/ch2.webp",
-      date: "10/12/2023",
-      title: "Thị trường cao su thiên nhiên tăng trưởng tích cực trong quý IV/2023",
-      category: "Cao su",
-      excerpt: "Giá cao su thiên nhiên tăng mạnh trong quý IV năm 2023 do nhu cầu từ thị trường Trung Quốc phục hồi và nguồn cung bị ảnh hưởng bởi thời tiết tại các nước sản xuất chính.",
-      slug: "thi-truong-cao-su-thien-nhien-tang-truong-tich-cuc"
-    },
-    {
-      id: 3,
-      image: "/images/cohoi/ch3.jpg",
-      date: "05/12/2023",
-      title: "Giá tiêu trong nước tăng mạnh nhờ nhu cầu xuất khẩu tăng cao",
-      category: "Hồ tiêu",
-      excerpt: "Giá tiêu trong nước tăng mạnh, đạt mức 90.000-92.000 đồng/kg tại một số tỉnh trọng điểm do nhu cầu xuất khẩu tăng cao từ các thị trường Trung Đông và châu Âu.",
-      slug: "gia-tieu-trong-nuoc-tang-manh-nho-nhu-cau-xuat-khau"
-    }
-  ];
+  const { latestNews } = useNewsFilters();
+  
+  // Lấy 3 tin mới nhất làm tin nổi bật
+  const featuredNews = latestNews.slice(0, 3);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-12 bg-backgroundprimary">
       <div className="container mx-auto px-4">
-        <motion.div
+        <motion.div 
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={staggerChildren}
           className="space-y-8"
         >
-          <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1a3d0a]">{t('news.featured_news.title')}</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              {t('news.featured_news.description')}
-            </p>
+          <motion.div variants={fadeInUp} className="mb-8">
+            <h2 className="text-center">{t('news.featured.title')}</h2>
+            <p className="text-center max-w-2xl mx-auto">{t('news.featured.description')}</p>
           </motion.div>
 
           <motion.div 
-            variants={fadeInUp}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            variants={staggerChildren}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
             {featuredNews.map((news) => (
-              <Link 
-                href={`/news/${news.slug}`} 
+              <motion.div 
                 key={news.id}
-                className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+                variants={fadeInUp}
+                className="bg-white rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group"
               >
-                <div className="h-60 overflow-hidden">
+                <Link href={`/news/${news.slug}`} className="block h-52 overflow-hidden">
                   <LazyImage
                     src={news.image}
                     alt={news.title}
@@ -94,27 +66,37 @@ const FeaturedNews = memo(() => {
                     height={400}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                </div>
+                </Link>
                 <div className="p-6">
-                  <div className="flex justify-between items-center mb-3">
+                  <div className="flex flex-wrap justify-between items-center mb-4">
                     <span className="text-sm text-[#5a5a3a]">{news.date}</span>
-                    <span className="text-xs uppercase tracking-wider bg-[#e7ece5] px-2 py-1 rounded-full text-[#1a3d0a] font-medium">
-                      {news.category}
-                    </span>
+                    <Link href={`/news?category=${news.category}`}>
+                      <span className="text-xs uppercase tracking-wider bg-[#e7ece5] px-2 py-1 rounded-full text-[#1a3d0a] font-medium">
+                        {news.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                      </span>
+                    </Link>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#1a3d0a] transition-colors duration-300">
-                    {news.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 line-clamp-3">
+                  <Link href={`/news/${news.slug}`}>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900 line-clamp-2 group-hover:text-[#1a3d0a] transition-colors duration-300">
+                      {news.title}
+                    </h3>
+                  </Link>
+                  <p className="text-gray-600 mb-4 text-sm line-clamp-3">
                     {news.excerpt}
                   </p>
                   <div className="flex justify-end">
-                    <button className="bg-[#1a3d0a] text-white text-sm px-6 py-2 rounded-full hover:bg-[#2c5b18] transition-colors duration-300">
-                      {t('news.news_list.read_more')}
-                    </button>
+                    <Link 
+                      href={`/news/${news.slug}`}
+                      className="text-[#1a3d0a] font-medium text-sm hover:underline flex items-center gap-1"
+                    >
+                      {t('news.featured.read_more')}
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
                   </div>
                 </div>
-              </Link>
+              </motion.div>
             ))}
           </motion.div>
         </motion.div>
