@@ -3,6 +3,7 @@
 import { memo, ReactNode } from 'react';
 import MainLayout from "@/layouts/MainLayout";
 import PageHero from '@/components/ui/PageHero';
+import { motion } from 'framer-motion';
 
 interface CategoryProductLayoutProps {
   children: ReactNode;
@@ -10,23 +11,44 @@ interface CategoryProductLayoutProps {
   heroImageUrl: string;
 }
 
+// Animation variants
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.7, ease: 'easeOut' }
+  }
+};
+
 const CategoryProductLayout = memo(({ children, title, heroImageUrl }: CategoryProductLayoutProps) => {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <PageHero 
-        title={title}
-        backgroundImage={heroImageUrl}
-        height="h-[40vh] md:h-[45vh]"
-        darkOverlay={false}
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <PageHero 
+          title={title}
+          backgroundImage={heroImageUrl}
+          height="h-[45vh] md:h-[50vh]"
+          darkOverlay={false}
+        />
+      </motion.div>
 
       {/* Content Section */}
-      <div className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <motion.div 
+        className="py-16 md:py-24 bg-gradient-to-b from-white to-[#f8f9f7]"
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+      >
+        <div className="container mx-auto px-4 md:max-w-5xl">
           {children}
         </div>
-      </div>
+      </motion.div>
     </MainLayout>
   );
 });

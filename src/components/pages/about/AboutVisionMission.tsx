@@ -46,7 +46,7 @@ const AboutVisionMission = memo(() => {
           
           <motion.div className="space-y-12" variants={staggerChildren}>
             <motion.div 
-              className="bg-card rounded-xl shadow-sm p-8"
+              className="bg-card rounded-[2rem] shadow-sm p-8"
               variants={fadeInUp}
             >
               <h3 className="text-2xl font-semibold mb-4">{t("about.vision_mission.vision_title")}</h3>
@@ -56,7 +56,7 @@ const AboutVisionMission = memo(() => {
             </motion.div>
             
             <motion.div 
-              className="bg-card rounded-xl shadow-sm p-8"
+              className="bg-card rounded-[2rem] shadow-sm p-8"
               variants={fadeInUp}
             >
               <h3 className="text-2xl font-semibold mb-4">{t("about.vision_mission.mission_title")}</h3>

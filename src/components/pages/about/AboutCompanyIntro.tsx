@@ -42,7 +42,7 @@ const AboutCompanyIntro = memo(() => {
             <LazyImage 
               src="/images/pages/about/image1.webp"
               alt={t("about.company_intro.image1_alt")}
-              className="rounded-2xl shadow-lg object-cover"
+              className="rounded-[2rem] shadow-lg object-cover"
               width={600}
               height={400}
             />
@@ -77,7 +77,7 @@ const AboutCompanyIntro = memo(() => {
             <LazyImage 
               src="/images/pages/about/image2.webp"
               alt={t("about.company_intro.image2_alt")}
-              className="rounded-2xl shadow-lg object-cover"
+              className="rounded-[2rem] shadow-lg object-cover"
               width={600}
               height={400}
             />

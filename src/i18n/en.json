@@ -304,5 +304,116 @@
       "title": "Map",
       "description": "Our representative office in Ho Chi Minh City"
     }
+  },
+  "category": {
+    "title": "Our Products Categories",
+    "subtitle": "Tantai Trading provides high-quality agricultural products that meet international standards",
+    "products": {
+      "coffee": {
+        "title": "COFFEE",
+        "subtitle": "Premium Quality Coffee",
+        "description": {
+          "paragraph1": "Coffee has long been a favorite beverage for millions of people around the world. Among them, the two most popular types of coffee, Robusta and Arabica, are famous for their distinctive flavor and superior quality. With geographical advantages, favorable weather conditions, and competitive production costs, Vietnam has established itself as one of the world's leading coffee-producing countries.",
+          "paragraph2": "Tantai Company is proud to contribute to the development of Vietnam's coffee industry with a modern processing plant system located right in the raw material area. Notably, we are investing in an instant coffee factory which is one of only three factories in Vietnam investing in advanced freeze-drying technology, meeting international standards. We supply various types of green unroasted Robusta and Arabica coffee, including dry-processed Robusta and wet-processed Arabica, dry-processed and spray-dried roasted coffee (light, medium, dark roast), freeze-dried instant coffee, and coffee extract.",
+          "paragraph3": "With a commitment to quality, continuous innovation, and customer focus, Tantai Company always strives to be a reliable partner, delivering high-quality coffee products, contributing to elevating the value of Vietnamese agricultural products in the international market."
+        },
+        "image_alts": {
+          "alt1": "High-quality Robusta and Arabica coffee beans",
+          "alt2": "Coffee harvesting process at Tantai plantation",
+          "alt3": "Tantai's modern coffee processing factory",
+          "alt4": "Tantai coffee meeting international standards"
+        }
+      },
+      "rubber": {
+        "title": "NATURAL RUBBER",
+        "subtitle": "Premium Natural Rubber Products",
+        "description": {
+          "paragraph1": "Vietnam is currently the third largest rubber producer in the world with over 940,000 hectares of rubber trees. The country's natural rubber production accounts for about 8.3% of global production, with a total output of over 1.2 million tons annually. This makes Vietnam one of the largest rubber exporters in the world market.",
+          "paragraph2": "Tantai Company specializes in providing standard SVR CV, SVR L, and SVR 3L natural rubber that meets international quality standards. Our rubber products are recognized for their high plasticity, good elongation, and outstanding stretch properties, making them suitable for various industrial applications.",
+          "paragraph3": "Through a strict quality control process from plantation to processing, we ensure that our natural rubber products meet the highest standards of quality and consistency. Our modern processing facilities and experienced team allow us to maintain the superior quality of our products and meet the diverse needs of our customers in both domestic and international markets."
+        },
+        "image_alts": {
+          "alt1": "Natural rubber processing at Tantai factory",
+          "alt2": "Premium quality rubber sheets produced by Tantai",
+          "alt3": "Quality control of rubber products at Tantai",
+          "alt4": "Tantai's rubber products ready for export"
+        }
+      },
+      "tapioca": {
+        "title": "TAPIOCA STARCH",
+        "subtitle": "High-Quality Tapioca Starch Products",
+        "description": {
+          "paragraph1": "Tapioca starch, derived from cassava roots, is a versatile ingredient widely used in food processing, textiles, pharmaceuticals, and other industries. Vietnam has become one of the world's major tapioca starch producers, with high-quality products that meet international standards.",
+          "paragraph2": "Tantai Company specializes in the production and export of premium tapioca starch. Our products are known for their high purity, excellent viscosity, and consistent quality. We process our tapioca starch using advanced technology, ensuring that it meets the strict requirements of international markets.",
+          "paragraph3": "Our tapioca starch is produced under stringent quality control measures from raw material selection to final packaging. We offer various grades of tapioca starch tailored to meet different industrial needs. Whether for food applications, textiles, paper, or industrial uses, our tapioca starch products provide reliable performance and superior quality."
+        },
+        "image_alts": {
+          "alt1": "Tapioca starch production at Tantai facility",
+          "alt2": "High-purity tapioca starch powder",
+          "alt3": "Quality testing of tapioca starch products",
+          "alt4": "Tapioca starch packaging for export markets"
+        }
+      },
+      "cashew": {
+        "title": "CASHEW NUTS",
+        "subtitle": "Premium Cashew Nuts Products",
+        "description": {
+          "paragraph1": "Cashew nuts are among the most nutritious and versatile nuts, prized globally for their delicious taste and numerous health benefits. Vietnam has established itself as the world's leading cashew nut exporter, known for producing high-quality cashews that meet international standards.",
+          "paragraph2": "Tantai Company specializes in the processing and export of premium cashew nuts. Our products range from whole kernels (W180, W210, W240, W320, W450) to broken kernels (LBW, SBW, BB, SB) and scorched kernels (WS), all meeting strict international quality standards. We employ advanced processing technologies and rigorous quality control measures to ensure that our cashew nuts maintain their natural flavor, nutritional value, and appealing appearance.",
+          "paragraph3": "Our cashew processing facilities comply with international food safety standards, including HACCP, ISO, BRC, and FDA regulations. We carefully select our raw materials from reliable sources and implement strict quality control throughout the production process, from raw nut processing to final packaging, ensuring that our customers receive consistently high-quality cashew products."
+        },
+        "image_alts": {
+          "alt1": "Premium cashew nuts processing at Tantai facility",
+          "alt2": "Sorted and graded cashew kernels in production",
+          "alt3": "Quality control inspection of cashew kernels",
+          "alt4": "Vacuum-packed cashew nuts ready for export"
+        }
+      },
+      "star_anise": {
+        "title": "STAR ANISE",
+        "subtitle": "Premium Star Anise Products",
+        "description": {
+          "paragraph1": "Star anise, known for its distinctive star shape and aromatic flavor, is a highly valued spice used in culinary applications and traditional medicine worldwide. Vietnam, particularly in the northern mountainous regions, produces some of the world's finest star anise with high essential oil content and superior quality.",
+          "paragraph2": "Tantai Company specializes in the cultivation, processing, and export of premium star anise. Our products include whole star anise, broken star anise, star anise powder, and star anise oil. We carefully source our star anise from the best growing regions, ensuring that our products have the optimal flavor profile, aroma, and essential oil content that our customers demand.",
+          "paragraph3": "Our star anise undergoes rigorous quality control processes, from harvesting and sun-drying to sorting, grading, and packaging. We maintain strict compliance with international food safety standards, including HACCP, ISO, and organic certifications. Through sustainable farming practices and modern processing techniques, we deliver star anise products that consistently meet the highest standards of quality and purity."
+        },
+        "image_alts": {
+          "alt1": "Star anise cultivation in Vietnam's northern mountainous regions",
+          "alt2": "Star anise harvesting and processing at Tantai",
+          "alt3": "Various grades of star anise products",
+          "alt4": "Quality testing of star anise for essential oil content"
+        }
+      },
+      "cinnamon": {
+        "title": "CINNAMON",
+        "subtitle": "Premium Cinnamon Products",
+        "description": {
+          "paragraph1": "Cinnamon, one of the world's oldest spices, has been valued for its unique aroma, flavor, and medicinal properties for thousands of years. Vietnamese cinnamon (Cinnamomum loureiroi), also known as Saigon cinnamon or Cassia, is highly regarded for its superior quality, characterized by its high essential oil content, particularly cinnamaldehyde, which gives it a more intense flavor and aroma compared to other varieties.",
+          "paragraph2": "Tantai Company specializes in the sustainable cultivation, processing, and export of premium Vietnamese cinnamon. Our product range includes cinnamon quills (sticks), broken cinnamon, cinnamon chips, cinnamon powder, and cinnamon oil. We meticulously source our cinnamon from the best growing regions in Vietnam, where the optimal climate and soil conditions contribute to the development of cinnamon with exceptional quality and high essential oil content.",
+          "paragraph3": "Our cinnamon undergoes a comprehensive quality control process, from careful harvesting and natural drying to sorting, grading, and proper packaging. We adhere to international food safety standards, including HACCP, ISO, and organic certifications. Through our commitment to sustainability and quality, we provide cinnamon products that consistently satisfy the discerning requirements of our global customers."
+        },
+        "image_alts": {
+          "alt1": "Cinnamon cultivation in Vietnam's highlands",
+          "alt2": "Traditional cinnamon harvesting and processing",
+          "alt3": "Various grades of cinnamon products from Tantai",
+          "alt4": "Quality testing of cinnamon for essential oil content"
+        }
+      },
+      "pepper": {
+        "title": "BLACK PEPPER",
+        "subtitle": "Premium Black Pepper Products",
+        "description": {
+          "paragraph1": "Black pepper, often referred to as the 'King of Spices,' has been one of the world's most valuable and traded spices for centuries. Vietnam has emerged as the world's largest producer and exporter of black pepper, known for its high-quality peppercorns with strong aroma, pungency, and distinctive flavor profile.",
+          "paragraph2": "Tantai Company specializes in the cultivation, processing, and export of premium Vietnamese black pepper. Our product range includes black pepper, white pepper, green pepper, red pepper, and ground pepper in various grades to meet different market requirements. We source our pepper from select growing regions in Vietnam, where ideal climate conditions and fertile soil contribute to the development of peppercorns with optimal essential oil content and flavor characteristics.",
+          "paragraph3": "Our pepper products undergo stringent quality control procedures, from careful harvesting and sun-drying to cleaning, sorting, grading, and sterilization. We implement advanced processing technologies and strict hygiene practices to ensure that our pepper is free from contaminants and meets international food safety standards, including HACCP, ISO, and organic certifications. Through our commitment to quality and sustainability, we deliver pepper products that consistently satisfy the high expectations of our customers worldwide."
+        },
+        "image_alts": {
+          "alt1": "Black pepper cultivation at Tantai's partner farms",
+          "alt2": "Traditional pepper harvesting and processing",
+          "alt3": "Various grades of pepper products from Tantai",
+          "alt4": "Quality testing of pepper for essential oil content"
+        }
+      }
+    }
   }
 } 

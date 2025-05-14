@@ -75,7 +75,7 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
       {/* Product Images */}
       {imageLayout === 'grid' && (
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
@@ -84,16 +84,18 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
           {images.map((image, index) => (
             <motion.div 
               key={index}
-              className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
+              className="group rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
               variants={fadeInUp}
             >
-              <LazyImage
-                src={image.src}
-                alt={image.alt}
-                width={image.width}
-                height={image.height}
-                className="w-full h-auto object-cover aspect-[4/3]"
-              />
+              <div className="overflow-hidden rounded-[2rem]">
+                <LazyImage
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  className="w-full h-auto object-cover aspect-[4/3] rounded-[2rem] hover:scale-110 transition-transform duration-700"
+                />
+              </div>
             </motion.div>
           ))}
         </motion.div>
@@ -101,7 +103,7 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
 
       {imageLayout === 'gallery' && (
         <motion.div
-          className="mt-12 space-y-8"
+          className="mt-12 space-y-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
@@ -114,22 +116,25 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
             return (
               <motion.div 
                 key={index}
-                className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center`}
+                className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center bg-[#f8f9f7] p-6 md:p-10 rounded-[2rem] shadow-sm hover:shadow-md transition-all duration-300`}
                 variants={isEven ? fadeInLeft : fadeInRight}
               >
                 <div className="md:w-1/2">
-                  <LazyImage
-                    src={image.src}
-                    alt={image.alt}
-                    width={image.width}
-                    height={image.height}
-                    className="w-full h-auto rounded-lg shadow-md"
-                  />
-                </div>
+                  <div className="overflow-hidden rounded-[2rem] shadow-sm group">
+                    <LazyImage
+                      src={image.src}
+                      alt={image.alt}
+                      width={image.width}
+                      height={image.height}
+                      className="object-cover w-full aspect-[4/2] rounded-[2rem] group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>  
                 <div className="md:w-1/2">
-                  <h3 className="text-xl font-bold mb-3">{image.alt}</h3>
-                  <p className="text-muted-foreground">
-                    Tantai Trading cung cấp sản phẩm chất lượng cao, đáp ứng tiêu chuẩn quốc tế.
+                  <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{image.alt}</h3>
+                  <div className="h-1 w-24 bg-[#1a3d0a]/30 rounded mb-6"></div>
+                  <p className="text-gray-700 leading-relaxed">
+                    Tantai Trading cung cấp sản phẩm chất lượng cao, đáp ứng tiêu chuẩn quốc tế. Chúng tôi tự hào về quy trình sản xuất chuyên nghiệp, đảm bảo chất lượng ổn định và giá trị dinh dưỡng cao trong mỗi sản phẩm.
                   </p>
                 </div>
               </motion.div>

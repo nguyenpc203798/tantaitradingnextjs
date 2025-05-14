@@ -303,5 +303,116 @@
       "title": "Bản Đồ",
       "description": "Văn phòng đại diện của chúng tôi tại Thành phố Hồ Chí Minh"
     }
+  },
+  "category": {
+    "title": "Danh Mục Sản Phẩm Của Chúng Tôi",
+    "subtitle": "Tấn Tài cung cấp các sản phẩm nông nghiệp chất lượng cao đạt tiêu chuẩn quốc tế",
+    "products": {
+      "coffee": {
+        "title": "CÀ PHÊ",
+        "subtitle": "Cà Phê Chất Lượng Cao",
+        "description": {
+          "paragraph1": "Cà phê từ lâu đã trở thành thức uống yêu thích của hàng triệu người trên thế giới. Trong đó, hai loại cà phê phổ biến nhất, Robusta và Arabica, nổi tiếng nhờ hương vị đặc trưng và chất lượng vượt trội. Với lợi thế địa lý, điều kiện thời tiết thuận lợi, cùng chi phí sản xuất cạnh tranh, Việt Nam đã khẳng định vị thế là một trong những quốc gia sản xuất cà phê hàng đầu thế giới.",
+          "paragraph2": "Công ty Tấn Tài tự hào đóng góp vào sự phát triển ngành cà phê Việt Nam với hệ thống nhà máy chế biến hiện đại, đặt ngay tại vùng nguyên liệu. Đặc biệt, chúng tôi đang đầu tư vào nhà máy cà phê hòa tan với quy mô là một trong ba nhà máy duy nhất tại Việt Nam đầu tư công nghệ sấy lạnh tiên tiến, đáp ứng các tiêu chuẩn quốc tế. Chúng tôi cung cấp đa dạng các loại cà phê Robusta và Arabica nhân xanh chưa rang, bao gồm Robusta chế biến khô và Arabica chế biến ướt, chế biến khô và cà phê rang xay sấy phun (rang nhẹ, rang vừa, rang đậm), cà phê hòa tan sấy lạnh, dịch cà phê trích ly.",
+          "paragraph3": "Với cam kết về chất lượng, sự đổi mới không ngừng và tập trung vào khách hàng, Công ty Tấn Tài luôn nỗ lực trở thành đối tác đáng tin cậy, mang đến những sản phẩm cà phê chất lượng cao, góp phần nâng tầm giá trị nông sản Việt Nam trên thị trường quốc tế."
+        },
+        "image_alts": {
+          "alt1": "Hạt cà phê Robusta và Arabica chất lượng cao",
+          "alt2": "Quá trình thu hoạch cà phê tại đồn điền Tấn Tài",
+          "alt3": "Nhà máy chế biến cà phê hiện đại của Tấn Tài",
+          "alt4": "Cà phê Tấn Tài đạt tiêu chuẩn quốc tế"
+        }
+      },
+      "rubber": {
+        "title": "CAO SU THIÊN NHIÊN",
+        "subtitle": "Sản Phẩm Cao Su Thiên Nhiên Cao Cấp",
+        "description": {
+          "paragraph1": "Việt Nam hiện là nhà sản xuất cao su lớn thứ ba trên thế giới với hơn 940.000 ha cây cao su. Sản lượng cao su thiên nhiên của đất nước chiếm khoảng 8,3% sản lượng toàn cầu, với tổng sản lượng hàng năm trên 1,2 triệu tấn. Điều này khiến Việt Nam trở thành một trong những nước xuất khẩu cao su lớn nhất trên thị trường thế giới.",
+          "paragraph2": "Công ty Tấn Tài chuyên cung cấp cao su thiên nhiên SVR CV, SVR L và SVR 3L đạt tiêu chuẩn quốc tế. Sản phẩm cao su của chúng tôi được công nhận về độ dẻo cao, độ giãn tốt và đặc tính co giãn nổi bật, làm cho chúng phù hợp với nhiều ứng dụng công nghiệp khác nhau.",
+          "paragraph3": "Thông qua quy trình kiểm soát chất lượng nghiêm ngặt từ đồn điền đến chế biến, chúng tôi đảm bảo rằng các sản phẩm cao su thiên nhiên của chúng tôi đáp ứng các tiêu chuẩn cao nhất về chất lượng và độ ổn định. Cơ sở chế biến hiện đại và đội ngũ kinh nghiệm cho phép chúng tôi duy trì chất lượng vượt trội của sản phẩm và đáp ứng nhu cầu đa dạng của khách hàng ở cả thị trường trong nước và quốc tế."
+        },
+        "image_alts": {
+          "alt1": "Chế biến cao su thiên nhiên tại nhà máy Tấn Tài",
+          "alt2": "Tấm cao su chất lượng cao được sản xuất bởi Tấn Tài",
+          "alt3": "Kiểm soát chất lượng sản phẩm cao su tại Tấn Tài",
+          "alt4": "Sản phẩm cao su của Tấn Tài sẵn sàng xuất khẩu"
+        }
+      },
+      "tapioca": {
+        "title": "TINH BỘT SẮN",
+        "subtitle": "Sản Phẩm Tinh Bột Sắn Chất Lượng Cao",
+        "description": {
+          "paragraph1": "Tinh bột sắn, được chiết xuất từ củ sắn, là một nguyên liệu đa dụng được sử dụng rộng rãi trong chế biến thực phẩm, dệt may, dược phẩm và các ngành công nghiệp khác. Việt Nam đã trở thành một trong những nhà sản xuất tinh bột sắn lớn trên thế giới, với các sản phẩm chất lượng cao đáp ứng tiêu chuẩn quốc tế.",
+          "paragraph2": "Công ty Tấn Tài chuyên sản xuất và xuất khẩu tinh bột sắn cao cấp. Sản phẩm của chúng tôi nổi tiếng với độ tinh khiết cao, độ nhớt tuyệt vời và chất lượng ổn định. Chúng tôi chế biến tinh bột sắn bằng công nghệ tiên tiến, đảm bảo đáp ứng các yêu cầu nghiêm ngặt của thị trường quốc tế.",
+          "paragraph3": "Tinh bột sắn của chúng tôi được sản xuất dưới các biện pháp kiểm soát chất lượng nghiêm ngặt từ việc lựa chọn nguyên liệu thô đến đóng gói cuối cùng. Chúng tôi cung cấp nhiều cấp độ tinh bột sắn khác nhau được thiết kế để đáp ứng các nhu cầu công nghiệp khác nhau. Dù cho ứng dụng thực phẩm, dệt may, giấy hay công nghiệp, sản phẩm tinh bột sắn của chúng tôi đều cung cấp hiệu suất đáng tin cậy và chất lượng vượt trội."
+        },
+        "image_alts": {
+          "alt1": "Sản xuất tinh bột sắn tại cơ sở Tấn Tài",
+          "alt2": "Bột tinh bột sắn tinh khiết cao",
+          "alt3": "Kiểm tra chất lượng sản phẩm tinh bột sắn",
+          "alt4": "Đóng gói tinh bột sắn cho thị trường xuất khẩu"
+        }
+      },
+      "cashew": {
+        "title": "HẠT ĐIỀU",
+        "subtitle": "Sản Phẩm Hạt Điều Cao Cấp",
+        "description": {
+          "paragraph1": "Hạt điều là một trong những loại hạt bổ dưỡng và đa dụng nhất, được ưa chuộng trên toàn cầu nhờ hương vị thơm ngon và nhiều lợi ích sức khỏe. Việt Nam đã xác lập vị thế là nhà xuất khẩu hạt điều hàng đầu thế giới, nổi tiếng với việc sản xuất hạt điều chất lượng cao đáp ứng tiêu chuẩn quốc tế.",
+          "paragraph2": "Công ty Tấn Tài chuyên về chế biến và xuất khẩu hạt điều cao cấp. Sản phẩm của chúng tôi bao gồm từ hạt nguyên (W180, W210, W240, W320, W450) đến hạt vỡ (LBW, SBW, BB, SB) và hạt cháy (WS), tất cả đều đáp ứng các tiêu chuẩn chất lượng quốc tế nghiêm ngặt. Chúng tôi sử dụng công nghệ chế biến tiên tiến và các biện pháp kiểm soát chất lượng nghiêm ngặt để đảm bảo rằng hạt điều của chúng tôi giữ được hương vị tự nhiên, giá trị dinh dưỡng và hình thức hấp dẫn.",
+          "paragraph3": "Các cơ sở chế biến hạt điều của chúng tôi tuân thủ các tiêu chuẩn an toàn thực phẩm quốc tế, bao gồm các quy định HACCP, ISO, BRC và FDA. Chúng tôi lựa chọn cẩn thận nguyên liệu thô từ các nguồn đáng tin cậy và thực hiện kiểm soát chất lượng nghiêm ngặt trong suốt quá trình sản xuất, từ chế biến hạt thô đến đóng gói cuối cùng, đảm bảo rằng khách hàng nhận được sản phẩm hạt điều chất lượng cao một cách nhất quán."
+        },
+        "image_alts": {
+          "alt1": "Chế biến hạt điều cao cấp tại cơ sở Tấn Tài",
+          "alt2": "Hạt điều được phân loại và phân hạng trong sản xuất",
+          "alt3": "Kiểm tra chất lượng hạt điều",
+          "alt4": "Hạt điều đóng gói chân không sẵn sàng xuất khẩu"
+        }
+      },
+      "star_anise": {
+        "title": "HOA HỒI",
+        "subtitle": "Sản Phẩm Hoa Hồi Cao Cấp",
+        "description": {
+          "paragraph1": "Hoa hồi, nổi tiếng với hình dạng ngôi sao đặc trưng và hương vị thơm, là một loại gia vị có giá trị cao được sử dụng trong ẩm thực và y học cổ truyền trên toàn thế giới. Việt Nam, đặc biệt là ở các vùng núi phía Bắc, sản xuất ra một số loại hoa hồi tốt nhất thế giới với hàm lượng tinh dầu cao và chất lượng vượt trội.",
+          "paragraph2": "Công ty Tấn Tài chuyên về trồng trọt, chế biến và xuất khẩu hoa hồi cao cấp. Sản phẩm của chúng tôi bao gồm hoa hồi nguyên, hoa hồi vỡ, bột hoa hồi và tinh dầu hoa hồi. Chúng tôi nguồn hoa hồi cẩn thận từ các vùng trồng tốt nhất, đảm bảo rằng sản phẩm của chúng tôi có hương vị tối ưu, hương thơm và hàm lượng tinh dầu thiết yếu mà khách hàng yêu cầu.",
+          "paragraph3": "Hoa hồi của chúng tôi trải qua các quy trình kiểm soát chất lượng nghiêm ngặt, từ thu hoạch và phơi nắng đến phân loại, xếp hạng và đóng gói. Chúng tôi duy trì sự tuân thủ nghiêm ngặt các tiêu chuẩn an toàn thực phẩm quốc tế, bao gồm HACCP, ISO và chứng nhận hữu cơ. Thông qua các phương pháp canh tác bền vững và kỹ thuật chế biến hiện đại, chúng tôi cung cấp các sản phẩm hoa hồi đáp ứng nhất quán các tiêu chuẩn cao nhất về chất lượng và độ tinh khiết."
+        },
+        "image_alts": {
+          "alt1": "Trồng hoa hồi ở vùng núi phía Bắc Việt Nam",
+          "alt2": "Thu hoạch và chế biến hoa hồi tại Tấn Tài",
+          "alt3": "Các loại sản phẩm hoa hồi khác nhau",
+          "alt4": "Kiểm tra chất lượng hoa hồi về hàm lượng tinh dầu"
+        }
+      },
+      "cinnamon": {
+        "title": "QUẾ",
+        "subtitle": "Sản Phẩm Quế Cao Cấp",
+        "description": {
+          "paragraph1": "Quế, một trong những loại gia vị lâu đời nhất thế giới, đã được đánh giá cao về hương thơm độc đáo, hương vị và đặc tính y học trong hàng nghìn năm. Quế Việt Nam (Cinnamomum loureiroi), còn được biết đến với tên gọi quế Sài Gòn hoặc Cassia, được đánh giá cao vì chất lượng vượt trội, đặc trưng bởi hàm lượng tinh dầu cao, đặc biệt là cinnamaldehyde, tạo cho nó hương vị và mùi thơm mạnh mẽ hơn so với các loại khác.",
+          "paragraph2": "Công ty Tấn Tài chuyên về trồng trọt bền vững, chế biến và xuất khẩu quế Việt Nam cao cấp. Danh mục sản phẩm của chúng tôi bao gồm quế cây (thanh), quế vỡ, mảnh quế, bột quế và tinh dầu quế. Chúng tôi lấy nguồn quế một cách tỉ mỉ từ các vùng trồng tốt nhất ở Việt Nam, nơi có điều kiện khí hậu và đất đai tối ưu góp phần phát triển quế với chất lượng đặc biệt và hàm lượng tinh dầu cao.",
+          "paragraph3": "Quế của chúng tôi trải qua một quy trình kiểm soát chất lượng toàn diện, từ thu hoạch cẩn thận và sấy khô tự nhiên đến phân loại, xếp hạng và đóng gói đúng cách. Chúng tôi tuân thủ các tiêu chuẩn an toàn thực phẩm quốc tế, bao gồm HACCP, ISO và chứng nhận hữu cơ. Thông qua cam kết về tính bền vững và chất lượng, chúng tôi cung cấp các sản phẩm quế đáp ứng nhất quán các yêu cầu khắt khe của khách hàng toàn cầu."
+        },
+        "image_alts": {
+          "alt1": "Trồng quế ở vùng cao nguyên Việt Nam",
+          "alt2": "Thu hoạch và chế biến quế theo truyền thống",
+          "alt3": "Các loại sản phẩm quế khác nhau từ Tấn Tài",
+          "alt4": "Kiểm tra chất lượng quế về hàm lượng tinh dầu"
+        }
+      },
+      "pepper": {
+        "title": "HẠT TIÊU",
+        "subtitle": "Sản Phẩm Hạt Tiêu Cao Cấp",
+        "description": {
+          "paragraph1": "Hạt tiêu đen, thường được gọi là 'Vua của Gia vị', đã là một trong những loại gia vị có giá trị nhất và được giao dịch nhiều nhất trên thế giới trong nhiều thế kỷ. Việt Nam đã nổi lên là nhà sản xuất và xuất khẩu hạt tiêu đen lớn nhất thế giới, nổi tiếng với hạt tiêu chất lượng cao với hương thơm mạnh mẽ, vị cay nồng và đặc tính hương vị đặc biệt.",
+          "paragraph2": "Công ty Tấn Tài chuyên về trồng trọt, chế biến và xuất khẩu hạt tiêu Việt Nam cao cấp. Danh mục sản phẩm của chúng tôi bao gồm tiêu đen, tiêu trắng, tiêu xanh, tiêu đỏ và tiêu xay với nhiều cấp độ khác nhau để đáp ứng các yêu cầu thị trường khác nhau. Chúng tôi lấy nguồn tiêu từ các vùng trồng chọn lọc ở Việt Nam, nơi điều kiện khí hậu lý tưởng và đất màu mỡ góp phần phát triển hạt tiêu với hàm lượng tinh dầu tối ưu và đặc tính hương vị.",
+          "paragraph3": "Sản phẩm tiêu của chúng tôi trải qua các thủ tục kiểm soát chất lượng nghiêm ngặt, từ thu hoạch cẩn thận và phơi nắng đến làm sạch, phân loại, xếp hạng và tiệt trùng. Chúng tôi áp dụng các công nghệ chế biến tiên tiến và thực hành vệ sinh nghiêm ngặt để đảm bảo rằng tiêu của chúng tôi không có chất gây ô nhiễm và đáp ứng các tiêu chuẩn an toàn thực phẩm quốc tế, bao gồm HACCP, ISO và chứng nhận hữu cơ. Thông qua cam kết về chất lượng và tính bền vững, chúng tôi cung cấp các sản phẩm tiêu đáp ứng nhất quán kỳ vọng cao của khách hàng trên toàn thế giới."
+        },
+        "image_alts": {
+          "alt1": "Trồng hạt tiêu tại các trang trại đối tác của Tấn Tài",
+          "alt2": "Thu hoạch và chế biến tiêu theo truyền thống",
+          "alt3": "Các loại sản phẩm tiêu khác nhau từ Tấn Tài",
+          "alt4": "Kiểm tra chất lượng tiêu về hàm lượng tinh dầu"
+        }
+      }
+    }
   }
 } 

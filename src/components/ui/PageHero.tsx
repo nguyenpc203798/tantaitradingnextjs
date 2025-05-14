@@ -35,6 +35,7 @@ interface PageHeroProps {
   darkOverlay?: boolean;
   variant?: 'default' | 'simple';
   className?: string;
+  rounded?: boolean;
 }
 
 const PageHero = memo(({
@@ -45,7 +46,8 @@ const PageHero = memo(({
   height = 'h-[40vh] md:h-[50vh]',
   darkOverlay = true,
   variant = 'default',
-  className = ''
+  className = '',
+  rounded = false
 }: PageHeroProps) => {
   const { t } = useLanguage();
 
@@ -56,7 +58,7 @@ const PageHero = memo(({
   // Simple variant (kiểu hero trang About)
   if (variant === 'simple') {
     return (
-      <section className={`pt-20 pb-16 md:py-32 bg-muted ${className}`}>
+      <section className={`pt-20 pb-16 md:py-32 bg-muted ${className} ${rounded ? 'rounded-[2rem]' : ''}`}>
         <div className="container mx-auto px-4">
           <motion.div 
             className="max-w-3xl mx-auto text-center"
@@ -87,7 +89,7 @@ const PageHero = memo(({
 
   // Default variant (với background image)
   return (
-    <section className={`relative w-full ${height} bg-[#1a3d0a] flex items-center ${className}`}>
+    <section className={`relative w-full ${height} bg-[#1a3d0a] flex items-center ${className} ${rounded ? 'rounded-[2rem] overflow-hidden' : ''}`}>
       {backgroundImage && (
         <div 
           className={`absolute inset-0 w-full h-full ${darkOverlay ? 'opacity-40' : 'opacity-70'} bg-no-repeat bg-cover bg-center`}

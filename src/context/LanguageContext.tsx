@@ -8,6 +8,7 @@ type Language = "en" | "vi";
 // Định nghĩa kiểu dữ liệu cho context
 type LanguageContextType = {
   language: Language;
+  currentLocale: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
 };
@@ -81,6 +82,7 @@ function useLanguageState() {
 
   return {
     language,
+    currentLocale: language,
     setLanguage,
     t
   };
@@ -88,14 +90,15 @@ function useLanguageState() {
 
 // Component Provider
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const { language, setLanguage, t } = useLanguageState();
+  const { language, currentLocale, setLanguage, t } = useLanguageState();
   
   // Memo hóa giá trị context để tránh re-render không cần thiết
   const value = useMemo(() => ({ 
     language, 
+    currentLocale,
     setLanguage,
     t 
-  }), [language, setLanguage, t]);
+  }), [language, currentLocale, setLanguage, t]);
 
   return (
     <LanguageContext.Provider value={value}>
