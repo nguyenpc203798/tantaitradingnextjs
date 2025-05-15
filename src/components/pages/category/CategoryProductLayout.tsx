@@ -33,8 +33,6 @@ const CategoryProductLayout = memo(({ children, title, heroImageUrl }: CategoryP
         <PageHero 
           title={title}
           backgroundImage={heroImageUrl}
-          height="h-[45vh] md:h-[50vh]"
-          darkOverlay={false}
         />
       </motion.div>
 
@@ -45,7 +43,7 @@ const CategoryProductLayout = memo(({ children, title, heroImageUrl }: CategoryP
         animate="visible"
         variants={fadeInUp}
       >
-        <div className="container mx-auto px-4 md:max-w-5xl">
+        <div className="container mx-auto px-4">
           {children}
         </div>
       </motion.div>

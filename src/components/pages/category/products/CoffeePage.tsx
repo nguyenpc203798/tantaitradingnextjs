@@ -10,19 +10,19 @@ const CoffeePage = memo(() => {
   
   const coffeeImages = [
     {
-      src: '/images/pages/category/Coffee/coffee1.webp',
+      src: '/images/pages/category/Coffee/coffee1.png',
       alt: t("category.products.coffee.image_alts.alt1"),
       width: 800,
       height: 600
     },
     {
-      src: '/images/pages/category/Coffee/coffee2.webp',
+      src: '/images/pages/category/Coffee/coffee2.png',
       alt: t("category.products.coffee.image_alts.alt2"),
       width: 800,
       height: 600
     },
     {
-      src: '/images/pages/category/Coffee/coffee3.webp',
+      src: '/images/pages/category/Coffee/coffee3.png',
       alt: t("category.products.coffee.image_alts.alt3"),
       width: 800,
       height: 600
@@ -51,7 +51,7 @@ const CoffeePage = memo(() => {
   return (
     <CategoryProductLayout 
       title={t("nav.products_items.coffee")}
-      heroImageUrl="/images/pages/category/Coffee/coffee1.webp"
+      heroImageUrl="/images/pages/category/Coffee/hero.jpg"
     >
       <ProductDetail 
         content={coffeeContent}

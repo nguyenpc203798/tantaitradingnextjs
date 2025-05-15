@@ -113,6 +113,13 @@
   .blur-bg:hover {
     @apply bg-blur-light text-black dark:bg-blur-dark dark:text-white;
   }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgb(0 0 0 / .6);
+  }
+  .text-shadow-none {
+    text-shadow: none;
+  }
 }
 
 /* Lenis smooth scroll styles */

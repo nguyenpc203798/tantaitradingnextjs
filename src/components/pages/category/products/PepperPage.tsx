@@ -57,7 +57,7 @@ const PepperPage = memo(() => {
   return (
     <CategoryProductLayout 
       title={t("nav.products_items.pepper")}
-      heroImageUrl="/images/pages/category/BlackPepper/balckpepper1.webp"
+      heroImageUrl="/images/pages/category/BlackPepper/hero.jpg"
     >
       <ProductDetail 
         content={pepperContent}

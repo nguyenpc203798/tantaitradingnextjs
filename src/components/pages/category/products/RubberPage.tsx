@@ -22,12 +22,6 @@ const RubberPage = memo(() => {
       height: 600
     },
     {
-      src: '/images/pages/category/NaturalRubber/naturalrubber3.webp',
-      alt: t("category.products.rubber.image_alts.alt3"),
-      width: 800,
-      height: 600
-    },
-    {
       src: '/images/pages/category/NaturalRubber/bangnaturalrubber.webp',
       alt: t("category.products.rubber.image_alts.alt4"),
       width: 800,
@@ -51,7 +45,7 @@ const RubberPage = memo(() => {
   return (
     <CategoryProductLayout 
       title={t("nav.products_items.rubber")}
-      heroImageUrl="/images/pages/category/NaturalRubber/naturalrubber1.webp"
+      heroImageUrl="/images/pages/category/NaturalRubber/hero.jpg"
     >
       <ProductDetail 
         content={rubberContent}

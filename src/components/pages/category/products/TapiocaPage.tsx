@@ -10,25 +10,25 @@ const TapiocaPage = memo(() => {
   
   const tapiocaImages = [
     {
-      src: '/images/pages/category/TapiocaStarch/tapioca1.webp',
+      src: '/images/pages/category/TapiocaStarch/topiocastartch1.webp',
       alt: t("category.products.tapioca.image_alts.alt1"),
       width: 800,
       height: 600
-    },
+    },  
     {
-      src: '/images/pages/category/TapiocaStarch/tapioca2.webp',
+      src: '/images/pages/category/TapiocaStarch/topiocastartch2.webp',
       alt: t("category.products.tapioca.image_alts.alt2"),
       width: 800,
       height: 600
     },
     {
-      src: '/images/pages/category/TapiocaStarch/tapioca3.webp',
+      src: '/images/pages/category/TapiocaStarch/topiocastartch3.webp',
       alt: t("category.products.tapioca.image_alts.alt3"),
       width: 800,
       height: 600
     },
     {
-      src: '/images/pages/category/TapiocaStarch/tapioca4.webp',
+      src: '/images/pages/category/TapiocaStarch/tabletopiocastartch.webp',
       alt: t("category.products.tapioca.image_alts.alt4"),
       width: 800,
       height: 600
@@ -51,7 +51,7 @@ const TapiocaPage = memo(() => {
   return (
     <CategoryProductLayout 
       title={t("nav.products_items.tapioca")}
-      heroImageUrl="/images/pages/category/TapiocaStarch/tapioca1.webp"
+      heroImageUrl="/images/pages/category/TapiocaStarch/hero.jpg"
     >
       <ProductDetail 
         content={tapiocaContent}

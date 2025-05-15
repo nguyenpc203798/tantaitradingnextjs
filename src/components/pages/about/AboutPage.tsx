@@ -16,6 +16,7 @@ const AboutPage = () => {
           title: 'about.hero.title',
           description: 'about.hero.description'
         }}
+        backgroundImage={"/images/gioithieu/hero.jpg"}
       />
       
       {/* Company Introduction Section */}

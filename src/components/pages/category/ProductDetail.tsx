@@ -87,13 +87,13 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
               className="group rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
               variants={fadeInUp}
             >
-              <div className="overflow-hidden rounded-[2rem]">
+              <div>
                 <LazyImage
                   src={image.src}
                   alt={image.alt}
                   width={image.width}
                   height={image.height}
-                  className="w-full h-auto object-cover aspect-[4/3] rounded-[2rem] hover:scale-110 transition-transform duration-700"
+                  className="w-full h-auto object-cover aspect-[4/3] hover:scale-110 transition-transform duration-700"
                 />
               </div>
             </motion.div>
@@ -120,13 +120,13 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
                 variants={isEven ? fadeInLeft : fadeInRight}
               >
                 <div className="md:w-1/2">
-                  <div className="overflow-hidden rounded-[2rem] shadow-sm group">
+                  <div className="group">
                     <LazyImage
                       src={image.src}
                       alt={image.alt}
                       width={image.width}
                       height={image.height}
-                      className="object-cover w-full aspect-[4/2] rounded-[2rem] group-hover:scale-105 transition-transform duration-700"
+                      className="object-contain w-full aspect-[4/2] group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
                 </div>  

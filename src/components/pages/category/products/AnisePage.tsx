@@ -45,7 +45,7 @@ const AnisePage = memo(() => {
   return (
     <CategoryProductLayout 
       title={t("nav.products_items.star_anise")}
-      heroImageUrl="/images/pages/category/StarAnise/staranise1.webp"
+      heroImageUrl="/images/pages/category/StarAnise/hero.jpg"
     >
       <ProductDetail 
         content={aniseContent}

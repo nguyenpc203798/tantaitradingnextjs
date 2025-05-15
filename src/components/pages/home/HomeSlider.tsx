@@ -35,7 +35,7 @@ const HomeSlider = memo(() => {
   ];
 
   return (
-    <div className="relative w-full h-[40vh] md:h-[60vh]">
+    <div className="relative w-full h-[40vh] md:h-[100vh]">
       <Swiper
         modules={[Pagination, EffectFade, Autoplay]}
         effect="fade"

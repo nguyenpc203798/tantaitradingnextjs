@@ -1,7 +1,7 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 ## Project Structure
 
@@ -49,13 +49,15 @@ alwaysApply: false
 
 - Pages: Application-specific views (app).
 
-- Business Logic: Clearly separated into services and hooks (services, hooks).
+- Business Logic: clearly separated into services and hooks (services, hooks). 
 
- ## Coding Standards
+## Coding Standards
 
 - Write explicit and clear type definitions.
 
 - Ensure the codebase is self-documenting, with meaningful comments.
+
+- Always comment and explain each line of code in detail (how functions and methods work) for easy understanding
 
 - Prefer @ for path aliases to simplify imports.
 
@@ -66,4 +68,4 @@ Responsiveness
 
 ## Always ensure responsiveness within source code:
 
-"Always pay attention to responsiveness in the source code to ensure good performance across all devices."
+- Always pay attention to responsiveness in the source code to ensure good performance across all devices.

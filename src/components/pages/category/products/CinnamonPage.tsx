@@ -45,7 +45,7 @@ const CinnamonPage = memo(() => {
   return (
     <CategoryProductLayout 
       title={t("nav.products_items.cinnamon")}
-      heroImageUrl="/images/pages/category/Cinnamon/cinnamon1.webp"
+      heroImageUrl="/images/pages/category/Cinnamon/hero.jpg"
     >
       <ProductDetail 
         content={cinnamonContent}

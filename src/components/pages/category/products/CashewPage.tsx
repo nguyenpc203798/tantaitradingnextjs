@@ -51,7 +51,7 @@ const CashewPage = memo(() => {
   return (
     <CategoryProductLayout 
       title={t("nav.products_items.cashew")}
-      heroImageUrl="/images/pages/category/CashewNuts/ww320.webp"
+      heroImageUrl="/images/pages/category/CashewNuts/hero.jpg"
     >
       <ProductDetail 
         content={cashewContent}

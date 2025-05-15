@@ -32,36 +32,43 @@ const staggerChildren = {
 const industries = [
   {
     id: 'coffee',
-    image: '/images/pages/category/Coffee/coffee1.webp'
+    image: '/images/pages/category/Coffee/hero.jpg'
   },
   {
     id: 'rubber',
-    image: '/images/pages/category/NaturalRubber/naturalrubber1.webp'
+    image: '/images/pages/category/NaturalRubber/hero.jpg'
   },
   { 
     id: 'tapioca',
-    image: '/images/pages/category/TapiocaStarch/topiocastartch1.webp'
+    image: '/images/pages/category/TapiocaStarch/hero.jpg'
   },
   {
     id: 'cashew',
-    image: '/images/pages/category/CashewNuts/ww180.webp'
+    image: '/images/pages/category/CashewNuts/hero.jpg'
   },
   {
     id: 'star_anise',
-    image: '/images/pages/category/StarAnise/staranise1.webp'
+    image: '/images/pages/category/StarAnise/hero.jpg'
   },
   {
     id: 'cinnamon',
-    image: '/images/pages/category/Cinnamon/cinnamon1.webp'
+    image: '/images/pages/category/Cinnamon/hero.jpg'
   },
   {
     id: 'pepper',
-    image: '/images/pages/category/BlackPepper/balckpepper1.webp'
+    image: '/images/pages/category/BlackPepper/hero.jpg'
   }
 ];
   
 const CategoryPage = memo(() => {
   const { t } = useLanguage();
+  
+  // Tính toán số phần tử còn dư khi chia cho 3 cột
+  const remainder = industries.length % 3;
+  // Boolean kiểm tra phần tử có phải phần tử cuối trong grid có 3 cột không
+  const isLastItemInThreeColGrid = (index: number) => {
+    return index === industries.length - 1 && remainder === 1;
+  };
 
   return (
     <MainLayout>
@@ -74,7 +81,6 @@ const CategoryPage = memo(() => {
         <PageHero 
           title={t("category.title")}
           backgroundImage={t("category.heroImageUrl")}
-          height="h-[45vh] md:h-[50vh]"
           darkOverlay={false}
         />
       </motion.div>
@@ -89,10 +95,12 @@ const CategoryPage = memo(() => {
             viewport={{ once: true, amount: 0.1 }}
             variants={staggerChildren}
           >
-            {industries.map((category) => (
+            {industries.map((category, index) => (
               <motion.div
                 key={category.id}
-                className="group relative overflow-hidden rounded-[2rem] shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
+                className={`group relative overflow-hidden rounded-[2rem] shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${
+                  isLastItemInThreeColGrid(index) ? 'lg:col-start-2' : ''
+                }`}
                 variants={fadeInUp}
               >
                 <Link 

@@ -128,7 +128,10 @@ const config: Config = {
   			'slide-in': 'slide-in 0.5s ease-out forwards',
             'fade-in': 'fade-in 1s ease-out forwards',
             'slide-down': 'slide-down 0.3s ease-out forwards'
-  		}
+  		},
+        textShadow: {
+            DEFAULT: '2px 2px 4px rgb(0 0 0 / .6)'
+        }
   	}
   },
   plugins: [animate],
