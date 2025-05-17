@@ -1,7 +1,13 @@
-import { memo, useCallback } from "react";
+import { memo } from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Globe } from "lucide-react";
+import {
+  HoverDropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
+import type { Language } from "@/context/LanguageContext";
 
 // Tách phần hiển thị ngôn ngữ thành component riêng (SRP)
 const LanguageText = memo(({ language }: { language: string }) => {
@@ -17,35 +23,46 @@ const LanguageTooltipText = memo(({ language }: { language: string }) => {
 
 LanguageTooltipText.displayName = "LanguageTooltipText";
 
+const LANGUAGES = [
+  { code: "vi", label: "Tiếng Việt", short: "VI", flag: "🇻🇳" },
+  { code: "en", label: "English", short: "EN", flag: "🇬🇧" },
+  { code: "zh", label: "中文", short: "ZH", flag: "🇨🇳" },
+];
+
 // Component chính
-const LanguageSwitcher = memo(() => {
+const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
 
-  // useCallback để tối ưu hóa hàm xử lý sự kiện
-  const handleToggleLanguage = useCallback(() => {
-    setLanguage(language === "en" ? "vi" : "en");
-  }, [language, setLanguage]);
-
   return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={handleToggleLanguage}
-            aria-label={language === "en" ? "Switch to English" : "Chuyển sang tiếng Việt"}
+    <HoverDropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <button
+          aria-label="Change language"
+          className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-accent focus:outline-none focus:ring-2 focus:ring-green-400 transition"
+          tabIndex={0}
+        >
+          <Globe className="w-5 h-5" />
+        </button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="min-w-[160px]">
+        {LANGUAGES.map((lang) => (
+          <DropdownMenuItem
+            key={lang.code}
+            onClick={() => setLanguage(lang.code as Language)}
+            className="flex items-center gap-2 cursor-pointer"
+            aria-label={lang.label}
           >
-            <LanguageText language={language} />
-          </Button>
-        </TooltipTrigger>
-        <TooltipContent>
-          <LanguageTooltipText language={language} />
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+            <span className="text-lg">{lang.flag}</span>
+            <span>{lang.label}</span>
+            {language === lang.code && (
+              <span className="ml-auto text-green-500">✔</span>
+            )}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </HoverDropdownMenu>
   );
-});
+};
 
 LanguageSwitcher.displayName = "LanguageSwitcher";
 

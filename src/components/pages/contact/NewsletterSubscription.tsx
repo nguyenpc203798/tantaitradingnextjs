@@ -70,13 +70,13 @@ const NewsletterSubscription = memo(() => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={fadeInUp}
-      className="bg-[#e7ece5] rounded-[2rem] p-6"
+      className="bg-[#e7ece5] dark:bg-[#1c2033] rounded-[2rem] p-6"
     >
-      <h3 className="text-2xl font-bold text-[#1a3d0a] mb-4">{t('contact.newsletter.title')}</h3>
-      <p className="text-gray-700 mb-6">{t('contact.newsletter.description')}</p>
+      <h3 className="text-2xl font-bold text-[#1a3d0a] dark:text-green-400 mb-4">{t('contact.newsletter.title')}</h3>
+      <p className="text-gray-700 dark:text-gray-300 mb-6">{t('contact.newsletter.description')}</p>
 
       {success && (
-        <div className="bg-green-50 border border-green-200 text-green-800 rounded-md p-3 mb-4">
+        <div className="bg-green-50 dark:bg-green-900 border border-green-200 dark:border-green-700 text-green-800 dark:text-green-300 rounded-md p-3 mb-4">
           {t('contact.newsletter.success_message')}
         </div>
       )}
@@ -89,18 +89,18 @@ const NewsletterSubscription = memo(() => {
             onChange={handleChange}
             placeholder={t('contact.newsletter.email_placeholder')}
             className={`w-full px-4 py-3 rounded-[2rem] border ${
-              error ? 'border-red-500' : 'border-gray-300'
-            } focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] focus:border-transparent`}
+              error ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-neutral-700'
+            } bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] dark:focus:ring-green-400 focus:border-transparent`}
           />
           {error && (
-            <p className="mt-1 text-sm text-red-600">{error}</p>
+            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{error}</p>
           )}
         </div>
 
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-3 bg-[#1a3d0a] text-white rounded-[2rem] font-medium hover:bg-[#2c5b18] transition-colors duration-300 flex items-center justify-center ${
+          className={`w-full py-3 bg-[#1a3d0a] dark:bg-green-600 text-white dark:text-white rounded-[2rem] font-medium hover:bg-[#2c5b18] dark:hover:bg-green-700 transition-colors duration-300 flex items-center justify-center ${
             isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
           }`}
         >

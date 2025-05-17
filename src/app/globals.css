@@ -5,12 +5,12 @@
 @layer base {
   :root {
     --background: #ffffff;
-    --foreground: #0a0a0a;
+    --foreground: #0f172a;
     --background-primary: #e7ece5;
     --card: #ffffff;
-    --card-foreground: #0a0a0a;
+    --card-foreground: #0f172a;
     --popover: #ffffff;
-    --popover-foreground: #0a0a0a;
+    --popover-foreground: #0f172a;
     --primary: #171717;
     --primary-foreground: #fafafa;
     --secondary: #f5f5f5;
@@ -23,7 +23,7 @@
     --destructive-foreground: #fafafa;
     --border: #e5e5e5;
     --input: #e5e5e5;
-    --ring: #0a0a0a;
+    --ring: #0f172a;
     --radius: 0.5rem;
     --chart-1: #df4c43;
     --chart-2: #238e87;
@@ -36,12 +36,12 @@
   }
  
   .dark {
-    --background: #0a0a0a;
+    --background: #0f172a;
     --foreground: #fafafa;
     --background-primary: #26371f;
-    --card: #0a0a0a;
+    --card: #0f172a;
     --card-foreground: #fafafa;
-    --popover: #0a0a0a;
+    --popover: #0f172a;
     --popover-foreground: #fafafa;
     --primary: #fafafa;
     --primary-foreground: #171717;
@@ -63,7 +63,7 @@
     --chart-5: #e63b74;
     --green: #062814;
     --green-foreground: #fafafa;
-    --blur-bg: rgb(0 0 0 / 0.3);
+    --blur-bg: rgba(0, 0, 0, 0.3);
   }
 }
 

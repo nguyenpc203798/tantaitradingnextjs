@@ -1,9 +1,10 @@
 import { createContext, useContext, useEffect, useState, useMemo, useCallback } from "react";
 import enTranslations from "@/i18n/en.json";
 import viTranslations from "@/i18n/vi.json";
+import zhTranslations from "@/i18n/zh.json";
 
 // Định nghĩa kiểu ngôn ngữ
-type Language = "en" | "vi";
+export type Language = "en" | "vi" | "zh";
 
 // Định nghĩa kiểu dữ liệu cho context
 type LanguageContextType = {
@@ -17,6 +18,7 @@ type LanguageContextType = {
 const translations = {
   en: enTranslations,
   vi: viTranslations,
+  zh: zhTranslations,
 };
 
 // Tạo context với giá trị mặc định undefined

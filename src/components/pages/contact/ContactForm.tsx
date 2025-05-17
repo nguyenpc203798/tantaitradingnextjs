@@ -136,18 +136,18 @@ const ContactForm = memo(() => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={staggerChildren}
-      className="bg-white rounded-[2rem] shadow-lg p-8"
+      className="bg-white dark:bg-[#1c2033] rounded-[2rem] shadow-lg p-8"
     >
       <motion.div variants={fadeInUp} className="mb-8">
-        <h2 className="text-3xl font-bold text-[#1a3d0a] mb-4">{t('contact.form.title')}</h2>
-        <p className="text-gray-600">{t('contact.form.description')}</p>
+        <h2 className="text-3xl font-bold text-[#1a3d0a] dark:text-green-400 mb-4">{t('contact.form.title')}</h2>
+        <p className="text-gray-600 dark:text-gray-300">{t('contact.form.description')}</p>
       </motion.div>
 
       {submitSuccess && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-green-50 border border-green-200 rounded-md p-4 mb-6 text-green-800"
+          className="bg-green-50 dark:bg-green-900 border border-green-200 dark:border-green-700 rounded-md p-4 mb-6 text-green-800 dark:text-green-300"
         >
           {t('contact.form.success_message')}
         </motion.div>
@@ -157,7 +157,7 @@ const ContactForm = memo(() => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-red-50 border border-red-200 rounded-md p-4 mb-6 text-red-800"
+          className="bg-red-50 dark:bg-red-900 border border-red-200 dark:border-red-700 rounded-md p-4 mb-6 text-red-800 dark:text-red-300"
         >
           {submitError}
         </motion.div>
@@ -166,7 +166,7 @@ const ContactForm = memo(() => {
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Họ tên */}
         <motion.div variants={fadeInUp}>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             {t('contact.form.name')} <span className="text-red-500">*</span>
           </label>
           <input
@@ -176,18 +176,18 @@ const ContactForm = memo(() => {
             value={formValues.name}
             onChange={handleChange}
             className={`w-full px-4 py-3 rounded-lg border ${
-              errors.name ? 'border-red-500' : 'border-gray-300'
-            } focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] focus:border-transparent`}
+              errors.name ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-neutral-700'
+            } bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] dark:focus:ring-green-400 focus:border-transparent`}
             placeholder={t('contact.form.name_placeholder')}
           />
           {errors.name && (
-            <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.name}</p>
           )}
         </motion.div>
 
         {/* Email */}
         <motion.div variants={fadeInUp}>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             {t('contact.form.email')} <span className="text-red-500">*</span>
           </label>
           <input
@@ -197,18 +197,18 @@ const ContactForm = memo(() => {
             value={formValues.email}
             onChange={handleChange}
             className={`w-full px-4 py-3 rounded-lg border ${
-              errors.email ? 'border-red-500' : 'border-gray-300'
-            } focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] focus:border-transparent`}
+              errors.email ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-neutral-700'
+            } bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] dark:focus:ring-green-400 focus:border-transparent`}
             placeholder={t('contact.form.email_placeholder')}
           />
           {errors.email && (
-            <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.email}</p>
           )}
         </motion.div>
 
         {/* Tiêu đề */}
         <motion.div variants={fadeInUp}>
-          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             {t('contact.form.subject')} <span className="text-red-500">*</span>
           </label>
           <input
@@ -218,18 +218,18 @@ const ContactForm = memo(() => {
             value={formValues.subject}
             onChange={handleChange}
             className={`w-full px-4 py-3 rounded-lg border ${
-              errors.subject ? 'border-red-500' : 'border-gray-300'
-            } focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] focus:border-transparent`}
+              errors.subject ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-neutral-700'
+            } bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] dark:focus:ring-green-400 focus:border-transparent`}
             placeholder={t('contact.form.subject_placeholder')}
           />
           {errors.subject && (
-            <p className="mt-1 text-sm text-red-600">{errors.subject}</p>
+            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.subject}</p>
           )}
         </motion.div>
 
         {/* Nội dung tin nhắn */}
         <motion.div variants={fadeInUp}>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
             {t('contact.form.message')} <span className="text-red-500">*</span>
           </label>
           <textarea
@@ -239,21 +239,21 @@ const ContactForm = memo(() => {
             onChange={handleChange}
             rows={5}
             className={`w-full px-4 py-3 rounded-lg border ${
-              errors.message ? 'border-red-500' : 'border-gray-300'
-            } focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] focus:border-transparent`}
+              errors.message ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-neutral-700'
+            } bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] dark:focus:ring-green-400 focus:border-transparent resize-none`}
             placeholder={t('contact.form.message_placeholder')}
           />
           {errors.message && (
-            <p className="mt-1 text-sm text-red-600">{errors.message}</p>
+            <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.message}</p>
           )}
         </motion.div>
 
         {/* Nút gửi */}
-        <motion.div variants={fadeInUp} className="flex justify-end">
+        <motion.div variants={fadeInUp}>
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`px-6 py-3 bg-[#1a3d0a] text-white rounded-lg font-medium hover:bg-[#2c5b18] transition-colors duration-300 flex items-center ${
+            className={`w-full py-3 bg-[#1a3d0a] dark:bg-green-600 text-white dark:text-white rounded-[2rem] font-medium hover:bg-[#2c5b18] dark:hover:bg-green-700 transition-colors duration-300 flex items-center justify-center ${
               isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
             }`}
           >

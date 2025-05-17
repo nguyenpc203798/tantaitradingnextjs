@@ -17,7 +17,7 @@ const ContactMap = memo(() => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16">
       <div className="container mx-auto px-4 mb-10">
         <motion.div
           initial="hidden"
@@ -26,8 +26,8 @@ const ContactMap = memo(() => {
           variants={fadeInUp}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold text-[#1a3d0a] mb-4">{t('contact.map.title')}</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-10 text-center">{t('contact.map.description')}</p>
+          <h2 className="text-3xl font-bold text-[#1a3d0a] dark:text-green-400 mb-4">{t('contact.map.title')}</h2>
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10 text-center">{t('contact.map.description')}</p>
         </motion.div>
       </div>
 

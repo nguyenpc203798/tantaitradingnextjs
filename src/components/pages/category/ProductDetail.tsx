@@ -116,7 +116,7 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
             return (
               <motion.div 
                 key={index}
-                className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center bg-[#f8f9f7] dark:bg-[#262725] p-6 md:p-10 rounded-[2rem] shadow-sm hover:shadow-md transition-all duration-300`}
+                className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center bg-[#f8f9f7] dark:bg-[#1c2033] p-6 md:p-10 rounded-[2rem] shadow-sm hover:shadow-md transition-all duration-300`}
                 variants={isEven ? fadeInLeft : fadeInRight}
               >
                 <div className="md:w-1/2">

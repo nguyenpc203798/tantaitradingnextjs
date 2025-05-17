@@ -80,7 +80,7 @@ const CategoryPage = memo(() => {
       >
         <PageHero 
           title={t("category.title")}
-          backgroundImage="/images/pages/category/hero-bg.jpg"
+          backgroundImage="/images/pages/category/hero.jpg"
           darkOverlay={false}
         />
       </motion.div>
@@ -115,6 +115,7 @@ const CategoryPage = memo(() => {
                       className="object-cover h-full w-full rounded-[2rem] transition-transform duration-700 group-hover:scale-110"
                       width={600}
                       height={450}
+                      priority={index < 3}
                     />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col items-center justify-end p-6 rounded-[2rem] group-hover:from-black/80 transition-all duration-300">

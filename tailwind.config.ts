@@ -68,7 +68,7 @@ const config: Config = {
             blur: {
                 DEFAULT: 'var(--blur-bg)',
                 light: '#ffffff',
-                dark: '#000000'
+                dark: '#0f172a'
             }
   		},
   		borderRadius: {
