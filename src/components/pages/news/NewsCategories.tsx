@@ -87,14 +87,14 @@ const NewsCategories = memo(() => {
       {/* Khối tìm kiếm */}
       <motion.div 
         variants={fadeInUp}
-        className="bg-white rounded-[2rem] shadow-md p-6"
+        className="bg-white dark:bg-gray-800 rounded-[2rem] shadow-md p-6"
       >
-        <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{t('news.search.title')}</h3>
+        <h3 className="text-xl font-bold mb-4 text-[#1a3d0a] dark:text-[#8cbb78]">{t('news.search.title')}</h3>
         <div className="relative">
           <input
             type="text"
             placeholder={t('news.search.placeholder')}
-            className="w-full py-3 px-4 pr-10 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] focus:border-transparent"
+            className="w-full py-3 px-4 pr-10 rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] dark:focus:ring-[#8cbb78] focus:border-transparent"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyDown={handleKeyDown}
@@ -104,7 +104,7 @@ const NewsCategories = memo(() => {
             onClick={handleSearchClick}
             aria-label="Search"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </button>
@@ -114,20 +114,20 @@ const NewsCategories = memo(() => {
       {/* Khối danh mục */}
       <motion.div 
         variants={fadeInUp}
-        className="bg-white rounded-[2rem] shadow-md p-6"
+        className="bg-white dark:bg-gray-800 rounded-[2rem] shadow-md p-6"
       >
-        <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{t('news.categories.title')}</h3>
+        <h3 className="text-xl font-bold mb-4 text-[#1a3d0a] dark:text-[#8cbb78]">{t('news.categories.title')}</h3>
         <ul className="space-y-3">
           {categories.map((category, index) => (
             <li key={index}>
               <Link 
                 href={`/news?category=${category.slug}`}
-                className={`flex justify-between items-center py-2 border-b border-gray-100 hover:text-[#1a3d0a] transition-colors duration-300 ${
-                  categoryParam === category.slug ? 'text-[#1a3d0a] font-medium' : ''
+                className={`flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-700 hover:text-[#1a3d0a] dark:hover:text-[#8cbb78] transition-colors duration-300 ${
+                  categoryParam === category.slug ? 'text-[#1a3d0a] dark:text-[#8cbb78] font-medium' : 'dark:text-gray-300'
                 }`}
               >
                 <span>{category.name}</span>
-                <span className="bg-[#e7ece5] text-[#1a3d0a] text-xs px-2 py-1 rounded-full">
+                <span className="bg-[#e7ece5] dark:bg-gray-700 text-[#1a3d0a] dark:text-gray-200 text-xs px-2 py-1 rounded-full">
                   {category.count}
                 </span>
               </Link>
@@ -139,9 +139,9 @@ const NewsCategories = memo(() => {
       {/* Khối tin mới nhất */}
       <motion.div 
         variants={fadeInUp}
-        className="bg-white rounded-[2rem] shadow-md p-6"
+        className="bg-white dark:bg-gray-800 rounded-[2rem] shadow-md p-6"
       >
-        <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{t('news.latest_news.title')}</h3>
+        <h3 className="text-xl font-bold mb-4 text-[#1a3d0a] dark:text-[#8cbb78]">{t('news.latest_news.title')}</h3>
         <div className="space-y-4">
           {latestNews.map((news) => (
             <Link 
@@ -159,8 +159,8 @@ const NewsCategories = memo(() => {
                 />
               </div>
               <div>
-                <p className="text-xs text-[#5a5a3a] mb-1">{news.date}</p>
-                <h4 className="text-sm font-semibold leading-tight group-hover:text-[#1a3d0a] transition-colors duration-300">
+                <p className="text-xs text-[#5a5a3a] dark:text-gray-400 mb-1">{news.date}</p>
+                <h4 className="text-sm font-semibold leading-tight dark:text-gray-200 group-hover:text-[#1a3d0a] dark:group-hover:text-[#8cbb78] transition-colors duration-300">
                   {news.title}
                 </h4>
               </div>
@@ -172,9 +172,9 @@ const NewsCategories = memo(() => {
       {/* Khối thẻ tag */}
       <motion.div 
         variants={fadeInUp}
-        className="bg-white rounded-[2rem] shadow-md p-6"
+        className="bg-white dark:bg-gray-800 rounded-[2rem] shadow-md p-6"
       >
-        <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{t('news.tags.title')}</h3>
+        <h3 className="text-xl font-bold mb-4 text-[#1a3d0a] dark:text-[#8cbb78]">{t('news.tags.title')}</h3>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <Link 
@@ -182,8 +182,8 @@ const NewsCategories = memo(() => {
               href={`/news?tag=${tag.toLowerCase().replace(/\s+/g, '-')}`}
               className={`px-3 py-1 rounded-full text-sm transition-colors duration-300 ${
                 tagParam === tag.toLowerCase().replace(/\s+/g, '-')
-                  ? 'bg-[#1a3d0a] text-white'
-                  : 'bg-[#e7ece5] text-[#1a3d0a] hover:bg-[#1a3d0a] hover:text-white'
+                  ? 'bg-[#1a3d0a] dark:bg-[#2c5b18] text-white'
+                  : 'bg-[#e7ece5] dark:bg-gray-700 text-[#1a3d0a] dark:text-gray-200 hover:bg-[#1a3d0a] hover:text-white dark:hover:bg-[#2c5b18]'
               }`}
             >
               {tag}

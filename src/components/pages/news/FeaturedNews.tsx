@@ -34,7 +34,7 @@ const FeaturedNews = memo(() => {
   const featuredNews = latestNews.slice(0, 3);
 
   return (
-    <section className="py-12 bg-backgroundprimary">
+    <section className="py-12 bg-backgroundprimary dark:bg-slate-900">
       <div className="container mx-auto px-4">
         <motion.div 
           initial="hidden"
@@ -44,8 +44,8 @@ const FeaturedNews = memo(() => {
           className="space-y-8"
         >
           <motion.div variants={fadeInUp} className="mb-8">
-            <h2 className="text-center">{t('news.featured.title')}</h2>
-            <p className="text-center max-w-2xl mx-auto">{t('news.featured.description')}</p>
+            <h2 className="text-center dark:text-white">{t('news.featured.title')}</h2>
+            <p className="text-center max-w-2xl mx-auto dark:text-gray-300">{t('news.featured.description')}</p>
           </motion.div>
 
           <motion.div 
@@ -56,7 +56,7 @@ const FeaturedNews = memo(() => {
               <motion.div 
                 key={news.id}
                 variants={fadeInUp}
-                className="bg-white rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group"
+                className="bg-background dark:bg-gray-800 rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group"
               >
                 <Link href={`/news/${news.slug}`} className="block h-52 overflow-hidden">
                   <LazyImage
@@ -69,25 +69,25 @@ const FeaturedNews = memo(() => {
                 </Link>
                 <div className="p-6">
                   <div className="flex flex-wrap justify-between items-center mb-4">
-                    <span className="text-sm text-[#5a5a3a]">{news.date}</span>
+                    <span className="text-sm text-[#5a5a3a] dark:text-gray-400">{news.date}</span>
                     <Link href={`/news?category=${news.category}`}>
-                      <span className="text-xs uppercase tracking-wider bg-[#e7ece5] px-2 py-1 rounded-full text-[#1a3d0a] font-medium">
+                      <span className="text-xs uppercase tracking-wider bg-[#e7ece5] dark:bg-gray-700 px-2 py-1 rounded-full text-[#1a3d0a] dark:text-gray-200 font-medium">
                         {news.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
                       </span>
                     </Link>
                   </div>
                   <Link href={`/news/${news.slug}`}>
-                    <h3 className="text-xl font-bold mb-2 text-gray-900 line-clamp-2 group-hover:text-[#1a3d0a] transition-colors duration-300">
+                    <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white line-clamp-2 group-hover:text-[#1a3d0a] dark:group-hover:text-[#8cbb78] transition-colors duration-300">
                       {news.title}
                     </h3>
                   </Link>
-                  <p className="text-gray-600 mb-4 text-sm line-clamp-3">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm line-clamp-3">
                     {news.excerpt}
                   </p>
                   <div className="flex justify-end">
                     <Link 
                       href={`/news/${news.slug}`}
-                      className="text-[#1a3d0a] font-medium text-sm hover:underline flex items-center gap-1"
+                      className="text-[#1a3d0a] dark:text-[#8cbb78] font-medium text-sm hover:underline flex items-center gap-1"
                     >
                       {t('news.featured.read_more')}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

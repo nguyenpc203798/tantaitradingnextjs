@@ -51,9 +51,9 @@ const NewsPage = memo(() => {
 
   return (
     <MainLayout>
-      <div className="min-h-screen overflow-hidden">
+      <div className="min-h-screen overflow-hidden dark:bg-gray-900">
         <PageHero 
-          backgroundImage="/images/news-banner.jpg"
+          backgroundImage="/images/pages/news/hero.jpg"
           title={pageTitle}
           description={pageDescription}
           i18nKey={

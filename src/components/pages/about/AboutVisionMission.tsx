@@ -1,37 +1,45 @@
 'use client';
 
-import { memo } from 'react';
-import { motion } from 'framer-motion';
+import { memo, useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 import { useLanguage } from "@/context/LanguageContext";
-import { useLenisInstance } from '@/context/LenisContext';
-import useParallaxEffect from '@/hooks/useParallaxEffect';
 import { fadeInUp, staggerChildren } from '@/lib/animations';
 
 const AboutVisionMission = memo(() => {
   const { t } = useLanguage();
-  const lenis = useLenisInstance();
   
-  // Sử dụng hook useParallaxEffect để tạo hiệu ứng parallax
-  const { sectionRef, parallaxRef, parallaxStyles } = useParallaxEffect(lenis, {
-    speed: 500, // Tốc độ hiệu ứng parallax
-    backgroundHeight: 120, // Chiều cao của background
-    backgroundTop: -50, // Vị trí top ban đầu
+  // Sử dụng framer-motion để tạo hiệu ứng parallax
+  const sectionRef = useRef<HTMLElement>(null);
+  
+  // Sử dụng useScroll và useTransform từ framer-motion để tạo hiệu ứng parallax tốt hơn
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"]
   });
+  
+  // Hiệu ứng di chuyển y khi scroll
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
 
   return (
     <section 
       ref={sectionRef}
       className="relative py-16 overflow-hidden"
     >
-      {/* Background parallax layer */}
-      <div 
-        ref={parallaxRef}
-        className="absolute inset-0 w-full z-0 will-change-transform"
-        style={{
-          backgroundImage: "url('/images/gioithieu/VisionMission/bg.jpg')",
-          ...parallaxStyles
-        }}
-      ></div>
+      {/* Background với Next.js Image và parallax từ Framer Motion */}
+      <div className="absolute inset-0 w-full z-0 h-[130%] -top-[50%]">
+        <motion.div style={{ y }} className="w-full h-full">
+          <Image 
+            src="/images/gioithieu/VisionMission/bg.jpg"
+            alt="Vision and Mission Background"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            quality={90}
+            priority={false}
+          />
+        </motion.div>
+      </div>
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">

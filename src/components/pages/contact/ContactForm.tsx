@@ -136,7 +136,7 @@ const ContactForm = memo(() => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={staggerChildren}
-      className="bg-white rounded-lg shadow-lg p-8"
+      className="bg-white rounded-[2rem] shadow-lg p-8"
     >
       <motion.div variants={fadeInUp} className="mb-8">
         <h2 className="text-3xl font-bold text-[#1a3d0a] mb-4">{t('contact.form.title')}</h2>

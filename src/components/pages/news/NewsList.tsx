@@ -68,8 +68,8 @@ const NewsList = memo(({
         className="space-y-8"
       >
         <motion.div variants={fadeInUp} className="mb-8">
-          <h2>{t('news.news_list.title')}</h2>
-          <div className="w-20 h-1 bg-[#1a3d0a]"></div>
+          <h2 className="dark:text-white">{t('news.news_list.title')}</h2>
+          <div className="w-20 h-1 bg-[#1a3d0a] dark:bg-[#8cbb78]"></div>
         </motion.div>
 
         {paginatedNews.length > 0 ? (
@@ -78,7 +78,7 @@ const NewsList = memo(({
               <motion.div 
                 key={news.id}
                 variants={fadeInUp}
-                className="group flex flex-col md:flex-row gap-6 bg-white rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 p-4"
+                className="group flex flex-col md:flex-row gap-6 bg-white dark:bg-gray-800 rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 p-4"
               >
                 <div className="w-full md:w-1/3 h-60 md:h-auto overflow-hidden rounded-[2rem]">
                   <Link href={`/news/${news.slug}`}>
@@ -94,21 +94,21 @@ const NewsList = memo(({
                 <div className="w-full md:w-2/3 flex flex-col justify-between">
                   <div>
                     <div className="flex flex-wrap gap-2 items-center mb-3">
-                      <span className="text-sm text-[#5a5a3a]">{news.date}</span>
+                      <span className="text-sm text-[#5a5a3a] dark:text-gray-400">{news.date}</span>
                       <Link href={`/news?category=${news.category}`}>
-                        <span className="text-xs uppercase tracking-wider bg-[#e7ece5] px-2 py-1 rounded-full text-[#1a3d0a] font-medium">
+                        <span className="text-xs uppercase tracking-wider bg-[#e7ece5] dark:bg-gray-700 px-2 py-1 rounded-full text-[#1a3d0a] dark:text-gray-200 font-medium">
                           {news.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
                         </span>
                       </Link>
                     </div>
                     
                     <Link href={`/news/${news.slug}`}>
-                      <h3 className="text-xl md:text-2xl font-bold mb-3 text-gray-900 group-hover:text-[#1a3d0a] transition-colors duration-300">
+                      <h3 className="text-xl md:text-2xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-[#1a3d0a] dark:group-hover:text-[#8cbb78] transition-colors duration-300">
                         {news.title}
                       </h3>
                     </Link>
                     
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       {news.excerpt}
                     </p>
                     
@@ -118,7 +118,7 @@ const NewsList = memo(({
                         <Link 
                           key={idx} 
                           href={`/news?tag=${tag.toLowerCase().replace(/\s+/g, '-')}`}
-                          className="text-xs bg-gray-100 hover:bg-[#e7ece5] px-2 py-1 rounded-full text-gray-600 hover:text-[#1a3d0a] transition-colors duration-300"
+                          className="text-xs bg-gray-100 dark:bg-gray-700 hover:bg-[#e7ece5] dark:hover:bg-gray-600 px-2 py-1 rounded-full text-gray-600 dark:text-gray-300 hover:text-[#1a3d0a] dark:hover:text-white transition-colors duration-300"
                         >
                           #{tag}
                         </Link>
@@ -128,7 +128,7 @@ const NewsList = memo(({
                   <div className="flex justify-end">
                     <Link 
                       href={`/news/${news.slug}`}
-                      className="bg-[#1a3d0a] text-white text-sm px-6 py-2 rounded-full hover:bg-[#2c5b18] transition-colors duration-300"
+                      className="bg-[#1a3d0a] dark:bg-[#2c5b18] text-white text-sm px-6 py-2 rounded-full hover:bg-[#2c5b18] dark:hover:bg-[#3d7a23] transition-colors duration-300"
                     >
                       {t('news.news_list.read_more')}
                     </Link>
@@ -139,7 +139,7 @@ const NewsList = memo(({
           </motion.div>
         ) : (
           <motion.div variants={fadeInUp} className="text-center py-20">
-            <p className="text-lg text-gray-500">{t('news.no_results')}</p>
+            <p className="text-lg text-gray-500 dark:text-gray-400">{t('news.no_results')}</p>
           </motion.div>
         )}
 
@@ -155,8 +155,8 @@ const NewsList = memo(({
                 onClick={() => handlePageChange(index + 1)}
                 className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 ${
                   currentPage === index + 1
-                    ? 'bg-[#1a3d0a] text-white'
-                    : 'bg-[#e7ece5] text-[#1a3d0a] hover:bg-[#c5d5c5]'
+                    ? 'bg-[#1a3d0a] dark:bg-[#2c5b18] text-white'
+                    : 'bg-[#e7ece5] dark:bg-gray-700 text-[#1a3d0a] dark:text-gray-200 hover:bg-[#c5d5c5] dark:hover:bg-gray-600'
                 }`}
                 aria-label={`Page ${index + 1}`}
               >

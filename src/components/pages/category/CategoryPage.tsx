@@ -80,13 +80,13 @@ const CategoryPage = memo(() => {
       >
         <PageHero 
           title={t("category.title")}
-          backgroundImage={t("category.heroImageUrl")}
+          backgroundImage="/images/pages/category/hero-bg.jpg"
           darkOverlay={false}
         />
       </motion.div>
 
       {/* Category Products Grid */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10"

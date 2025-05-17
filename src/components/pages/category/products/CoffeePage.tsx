@@ -37,13 +37,13 @@ const CoffeePage = memo(() => {
   
   const coffeeContent = (
     <>
-      <h2 className="text-3xl font-bold mb-4 text-center text-[#1a3d0a]">{t("category.products.coffee.title")}</h2>
+      <h2 className="text-3xl font-bold mb-4 text-center text-[#1a3d0a] dark:text-[#7fb766]">{t("category.products.coffee.title")}</h2>
       <h3 className="text-xl font-semibold mb-8 text-center text-muted-foreground">{t("category.products.coffee.subtitle")}</h3>
       
       <div className="space-y-6">
-        <p className="text-gray-700">{t("category.products.coffee.description.paragraph1")}</p>
-        <p className="text-gray-700">{t("category.products.coffee.description.paragraph2")}</p>
-        <p className="text-gray-700">{t("category.products.coffee.description.paragraph3")}</p>
+        <p>{t("category.products.coffee.description.paragraph1")}</p>
+        <p>{t("category.products.coffee.description.paragraph2")}</p>
+        <p>{t("category.products.coffee.description.paragraph3")}</p>
       </div>
     </>
   );

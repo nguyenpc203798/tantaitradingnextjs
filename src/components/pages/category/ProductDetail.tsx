@@ -116,7 +116,7 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
             return (
               <motion.div 
                 key={index}
-                className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center bg-[#f8f9f7] p-6 md:p-10 rounded-[2rem] shadow-sm hover:shadow-md transition-all duration-300`}
+                className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center bg-[#f8f9f7] dark:bg-[#262725] p-6 md:p-10 rounded-[2rem] shadow-sm hover:shadow-md transition-all duration-300`}
                 variants={isEven ? fadeInLeft : fadeInRight}
               >
                 <div className="md:w-1/2">
@@ -131,9 +131,9 @@ const ProductDetail = memo(({ content, images, imageLayout = 'grid' }: ProductDe
                   </div>
                 </div>  
                 <div className="md:w-1/2">
-                  <h3 className="text-xl font-bold mb-4 text-[#1a3d0a]">{image.alt}</h3>
-                  <div className="h-1 w-24 bg-[#1a3d0a]/30 rounded mb-6"></div>
-                  <p className="text-gray-700 leading-relaxed">
+                  <h3 className="text-xl font-bold mb-4 text-[#1a3d0a] dark:text-[#7fb766]">{image.alt}</h3>
+                  <div className="h-1 w-24 bg-[#1a3d0a]/30 dark:bg-[#7fb766]/30 rounded mb-6"></div>
+                  <p>
                     Tantai Trading cung cấp sản phẩm chất lượng cao, đáp ứng tiêu chuẩn quốc tế. Chúng tôi tự hào về quy trình sản xuất chuyên nghiệp, đảm bảo chất lượng ổn định và giá trị dinh dưỡng cao trong mỗi sản phẩm.
                   </p>
                 </div>

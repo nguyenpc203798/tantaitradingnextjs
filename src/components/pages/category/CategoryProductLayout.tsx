@@ -38,7 +38,7 @@ const CategoryProductLayout = memo(({ children, title, heroImageUrl }: CategoryP
 
       {/* Content Section */}
       <motion.div 
-        className="py-16 md:py-24 bg-gradient-to-b from-white to-[#f8f9f7]"
+        className="py-16 md:py-24"
         initial="hidden"
         animate="visible"
         variants={fadeInUp}

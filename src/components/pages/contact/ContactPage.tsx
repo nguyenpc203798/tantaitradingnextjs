@@ -13,7 +13,7 @@ const ContactPage = memo(() => {
     <MainLayout>
       <div className="min-h-screen overflow-hidden">
         <PageHero 
-          backgroundImage="/images/contact-banner.jpg"
+          backgroundImage="/images/pages/contact/hero.jpg"
           i18nKey={{
             title: 'contact.hero.title',
             description: 'contact.hero.description'

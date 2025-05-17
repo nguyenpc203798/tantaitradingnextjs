@@ -47,9 +47,9 @@ const PepperPage = memo(() => {
       <h3 className="text-xl font-semibold mb-8 text-center text-muted-foreground">{t("category.products.pepper.subtitle")}</h3>
       
       <div className="space-y-6">
-        <p className="text-gray-700">{t("category.products.pepper.description.paragraph1")}</p>
-        <p className="text-gray-700">{t("category.products.pepper.description.paragraph2")}</p>
-        <p className="text-gray-700">{t("category.products.pepper.description.paragraph3")}</p>
+        <p>{t("category.products.pepper.description.paragraph1")}</p>
+        <p>{t("category.products.pepper.description.paragraph2")}</p>
+        <p>{t("category.products.pepper.description.paragraph3")}</p>
       </div>
     </>
   );

@@ -70,7 +70,7 @@ const NewsletterSubscription = memo(() => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={fadeInUp}
-      className="bg-[#e7ece5] rounded-lg p-6"
+      className="bg-[#e7ece5] rounded-[2rem] p-6"
     >
       <h3 className="text-2xl font-bold text-[#1a3d0a] mb-4">{t('contact.newsletter.title')}</h3>
       <p className="text-gray-700 mb-6">{t('contact.newsletter.description')}</p>
@@ -88,7 +88,7 @@ const NewsletterSubscription = memo(() => {
             value={email}
             onChange={handleChange}
             placeholder={t('contact.newsletter.email_placeholder')}
-            className={`w-full px-4 py-3 rounded-lg border ${
+            className={`w-full px-4 py-3 rounded-[2rem] border ${
               error ? 'border-red-500' : 'border-gray-300'
             } focus:outline-none focus:ring-2 focus:ring-[#1a3d0a] focus:border-transparent`}
           />
@@ -100,7 +100,7 @@ const NewsletterSubscription = memo(() => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-3 bg-[#1a3d0a] text-white rounded-lg font-medium hover:bg-[#2c5b18] transition-colors duration-300 flex items-center justify-center ${
+          className={`w-full py-3 bg-[#1a3d0a] text-white rounded-[2rem] font-medium hover:bg-[#2c5b18] transition-colors duration-300 flex items-center justify-center ${
             isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
           }`}
         >

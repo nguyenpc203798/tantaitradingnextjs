@@ -37,13 +37,13 @@ const TapiocaPage = memo(() => {
   
   const tapiocaContent = (
     <>
-      <h2 className="text-3xl font-bold mb-4 text-center text-[#1a3d0a]">{t("category.products.tapioca.title")}</h2>
+      <h2 className="text-3xl font-bold mb-4 text-center text-[#7db762] dark:text-[#7fb766]">{t("category.products.tapioca.title")}</h2>
       <h3 className="text-xl font-semibold mb-8 text-center text-muted-foreground">{t("category.products.tapioca.subtitle")}</h3>
       
       <div className="space-y-6">
-        <p className="text-gray-700">{t("category.products.tapioca.description.paragraph1")}</p>
-        <p className="text-gray-700">{t("category.products.tapioca.description.paragraph2")}</p>
-        <p className="text-gray-700">{t("category.products.tapioca.description.paragraph3")}</p>
+        <p>{t("category.products.tapioca.description.paragraph1")}</p>
+        <p>{t("category.products.tapioca.description.paragraph2")}</p>
+        <p>{t("category.products.tapioca.description.paragraph3")}</p>
       </div>
     </>
   );

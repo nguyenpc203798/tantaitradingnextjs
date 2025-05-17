@@ -35,9 +35,9 @@ const RubberPage = memo(() => {
       <h3 className="text-xl font-semibold mb-8 text-center text-muted-foreground">{t("category.products.rubber.subtitle")}</h3>
       
       <div className="space-y-6">
-        <p className="text-gray-700">{t("category.products.rubber.description.paragraph1")}</p>
-        <p className="text-gray-700">{t("category.products.rubber.description.paragraph2")}</p>
-        <p className="text-gray-700">{t("category.products.rubber.description.paragraph3")}</p>
+        <p>{t("category.products.rubber.description.paragraph1")}</p>
+        <p>{t("category.products.rubber.description.paragraph2")}</p>
+        <p>{t("category.products.rubber.description.paragraph3")}</p>
       </div>
     </>
   );
