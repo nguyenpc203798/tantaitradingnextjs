@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useEffect, useState } from 'react';
+import { memo, useEffect, useState, Suspense } from 'react';
 import PageHero from '@/components/ui/PageHero';
 import NewsList from './NewsList';
 import NewsCategories from './NewsCategories';
@@ -9,7 +9,14 @@ import MainLayout from '@/layouts/MainLayout';
 import { useSearchParams } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 
-const NewsPage = memo(() => {
+// Loading fallback component
+const Loading = () => (
+  <div className="min-h-screen flex items-center justify-center">
+    <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-[#1a3d0a]"></div>
+  </div>
+);
+
+const NewsPageContent = memo(() => {
   const { t } = useLanguage();
   const searchParams = useSearchParams();
   const [pageTitle, setPageTitle] = useState('');
@@ -80,6 +87,16 @@ const NewsPage = memo(() => {
   );
 });
 
+// Wrapper component that adds Suspense
+const NewsPage = () => {
+  return (
+    <Suspense fallback={<Loading />}>
+      <NewsPageContent />
+    </Suspense>
+  );
+};
+
+NewsPageContent.displayName = 'NewsPageContent';
 NewsPage.displayName = 'NewsPage';
 
 export default NewsPage; 

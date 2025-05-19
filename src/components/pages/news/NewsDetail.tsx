@@ -1,16 +1,14 @@
 'use client';
 
-import { memo } from 'react';
+import { memo, Suspense } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import MainLayout from '@/layouts/MainLayout';
 import LazyImage from '@/components/LazyImage';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { NewsItem } from '@/hooks/useNewsFilters';
-import { useEffect, useState } from 'react';
 import PageHero from '@/components/ui/PageHero';
 import NewsCategories from './NewsCategories';
-import newsData from '@/data/news.json';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -32,35 +30,19 @@ const staggerChildren = {
 };
 
 interface NewsDetailProps {
-  slug: string;
+  news: NewsItem | null;
+  relatedNews: NewsItem[];
 }
 
-const NewsDetail = memo(({ slug }: NewsDetailProps) => {
-  const { t } = useLanguage();
-  const [news, setNews] = useState<NewsItem | null>(null);
-  const [relatedNews, setRelatedNews] = useState<NewsItem[]>([]);
+// Loading fallback component
+const Loading = () => (
+  <div className="min-h-screen flex items-center justify-center">
+    <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-[#1a3d0a]"></div>
+  </div>
+);
 
-  // Tìm tin tức dựa vào slug
-  useEffect(() => {
-    // Tìm tin tức theo slug
-    const newsItem = (newsData as NewsItem[]).find(item => item.slug === slug);
-    
-    if (newsItem) {
-      setNews(newsItem);
-      
-      // Tìm tin tức liên quan (cùng category hoặc có chung tag)
-      const related = (newsData as NewsItem[])
-        .filter(item => 
-          item.id !== newsItem.id && (
-            item.category === newsItem.category ||
-            item.tags.some(tag => newsItem.tags.includes(tag))
-          )
-        )
-        .slice(0, 3);
-      
-      setRelatedNews(related);
-    }
-  }, [slug]);
+const NewsDetailContent = memo(({ news, relatedNews }: NewsDetailProps) => {
+  const { t } = useLanguage();
 
   if (!news) {
     return <div className="min-h-screen flex items-center justify-center">
@@ -120,24 +102,19 @@ const NewsDetail = memo(({ slug }: NewsDetailProps) => {
                 <p className="text-lg font-medium mb-6 dark:text-white">
                   {news.excerpt}
                 </p>
-                
                 {/* Giả lập nội dung chi tiết từ content_preview */}
                 <p className="mb-4 dark:text-gray-300">
                   {news.content_preview}
                 </p>
-                
                 <p className="mb-4 dark:text-gray-300">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl eget ultricies ultrices, nunc nisl aliquam nunc, eget aliquet nisl nisl eget nisl. Sed euismod, nisl eget ultricies ultrices, nunc nisl aliquam nunc, eget aliquet nisl nisl eget nisl.
                 </p>
-                
                 <h3 className="text-xl font-bold mt-8 mb-4 text-[#1a3d0a] dark:text-[#8cbb78]">
                   {t('news.market_overview')}
                 </h3>
-                
                 <p className="mb-4 dark:text-gray-300">
                   Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.
                 </p>
-
                 <p className="mb-4 dark:text-gray-300">
                   Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.
                 </p>
@@ -216,6 +193,16 @@ const NewsDetail = memo(({ slug }: NewsDetailProps) => {
   );
 });
 
+// Wrapper component that adds Suspense
+const NewsDetail = ({ news, relatedNews }: NewsDetailProps) => {
+  return (
+    <Suspense fallback={<Loading />}>
+      <NewsDetailContent news={news} relatedNews={relatedNews} />
+    </Suspense>
+  );
+};
+
+NewsDetailContent.displayName = 'NewsDetailContent';
 NewsDetail.displayName = 'NewsDetail';
 
 export default NewsDetail;
