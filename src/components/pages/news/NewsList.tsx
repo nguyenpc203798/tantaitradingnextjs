@@ -7,25 +7,7 @@ import LazyImage from '@/components/LazyImage';
 import Link from 'next/link';
 import { useNewsFilters } from '@/hooks/useNewsFilters';
 import { useSearchParams } from 'next/navigation';
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-};
-
-const staggerChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
+import { fadeInUp , staggerChildren } from '@/lib/animations';
 
 type NewsListProps = {
   initialCategory?: string;

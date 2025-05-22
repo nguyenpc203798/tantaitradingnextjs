@@ -5,24 +5,7 @@ import { memo } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import LazyImage from '@/components/LazyImage';
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-};
-
-const staggerChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
-  }
-};
+import { fadeInUp , staggerChildren } from '@/lib/animations';
 
 const ProductsSection = memo(() => {
   const { t } = useLanguage();

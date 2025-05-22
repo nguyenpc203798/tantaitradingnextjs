@@ -103,6 +103,16 @@ export const staggerSlow = {
   }
 };
 
+export const staggerGrid = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15
+    }
+  }
+};
+
 /**
  * Hiệu ứng chỉ fade in đơn giản
  */

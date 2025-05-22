@@ -11,15 +11,7 @@ interface CategoryProductLayoutProps {
   heroImageUrl: string;
 }
 
-// Animation variants
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.7, ease: 'easeOut' }
-  }
-};
+import { fadeInUp } from '@/lib/animations';
 
 const CategoryProductLayout = memo(({ children, title, heroImageUrl }: CategoryProductLayoutProps) => {
   return (

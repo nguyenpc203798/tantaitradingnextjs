@@ -3,44 +3,8 @@
 import { memo, ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import LazyImage from "@/components/LazyImage";
+import { fadeInUp, fadeInLeft, fadeInRight, staggerChildren } from '@/lib/animations';
 
-// Animation variants
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-};
-
-const fadeInLeft = {
-  hidden: { opacity: 0, x: -20 },
-  visible: { 
-    opacity: 1, 
-    x: 0,
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-};
-
-const fadeInRight = {
-  hidden: { opacity: 0, x: 20 },
-  visible: { 
-    opacity: 1, 
-    x: 0,
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-};
-
-const staggerChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
-  }
-};
 
 interface ProductDetailProps {
   content: ReactNode;
