@@ -3,15 +3,7 @@
 import { motion } from 'framer-motion';
 import { memo } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-};
+import { fadeInUp } from '@/lib/animations';
 
 const ContactMap = memo(() => {
   const { t } = useLanguage();

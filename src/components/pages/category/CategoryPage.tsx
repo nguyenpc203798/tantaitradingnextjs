@@ -7,26 +7,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import MainLayout from "@/layouts/MainLayout";
 import LazyImage from "@/components/LazyImage";
 import PageHero from '@/components/ui/PageHero';
-
-// Animation variants
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-};
-
-const staggerChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
-  }
-};
+import { fadeInUp , staggerChildren } from '@/lib/animations';
 
 // Danh sách các sản phẩm ngành hàng
 const industries = [

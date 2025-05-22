@@ -52,14 +52,19 @@
         }
       },
       "stats": {
-        "company": "Tantai",
-        "company_subtitle": "Scale & Production",
-        "bags_per_year": "2 million",
-        "bags_subtitle": "Bags/ Year",
-        "tons_per_year": "110,000",
-        "tons_subtitle": "Tons/ year",
         "revenue": "7,200",
-        "revenue_subtitle": "Billion VND revenue in 2024"
+        "revenue_subtitle": "Billion VND revenue in 2024",
+        "tons": "66,000", 
+        "tons_subtitle": "Tons/ year",
+        "bags": "1.1 million",
+        "bags_subtitle": "Bags/ Year",
+        "experience": "30+ years",
+        "experience_subtitle-top": "Experience in production, sourcing",
+        "experience_subtitle-bottom": "& international agricultural export",
+        "factory_warehouse": "02",
+        "factory_warehouse_subtitle": "Warehouses / factories",
+        "agricultural_services": "03",
+        "agricultural_services_subtitle": "Investment projects"
       }
     },
     "products_section": {

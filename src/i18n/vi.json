@@ -52,14 +52,19 @@
         }
       },
       "stats": {
-        "company": "Tấn Tài",
-        "company_subtitle": "Quy mô & Sản lượng",
-        "bags_per_year": "2 triệu",
-        "bags_subtitle": "Bao/ Năm",
-        "tons_per_year": "110,000",
-        "tons_subtitle": "Tấn/ năm",
         "revenue": "7,200",
-        "revenue_subtitle": "Tỷ đồng doanh thu năm 2024"
+        "revenue_subtitle": "Tỷ đồng doanh thu năm 2024",
+        "tons": "66,000",
+        "tons_subtitle": "Tấn/ năm",
+        "bags": "1.1 triệu",
+        "bags_subtitle": "Bao/ Năm",
+        "experience": "30+ năm",
+        "experience_subtitle-top": "Kinh nghiệm sản xuất, thu mua",
+        "experience_subtitle-bottom": "& xuất khẩu nông sản quốc tế",
+        "factory_warehouse": "02",
+        "factory_warehouse_subtitle": "Kho / nhà máy",
+        "agricultural_services": "03",
+        "agricultural_services_subtitle": "Đề án đầu tư"
       }
     },
     "products_section": {

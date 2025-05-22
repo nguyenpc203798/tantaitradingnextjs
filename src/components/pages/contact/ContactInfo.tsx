@@ -4,25 +4,7 @@ import { motion } from 'framer-motion';
 import { memo } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { MapPinIcon, EnvelopeIcon, PhoneIcon, ClockIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline';
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-};
-
-const staggerChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
+import { fadeInUp , staggerChildren } from '@/lib/animations';
 
 const ContactInfo = memo(() => {
   const { t } = useLanguage();

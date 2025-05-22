@@ -52,14 +52,19 @@
           }
         },
         "stats": {
-          "company": "Tantai",
-          "company_subtitle": "规模与生产",
-          "bags_per_year": "200万",
-          "bags_subtitle": "袋/年",
-          "tons_per_year": "11万",
+          "revenue": "7,200",
+          "revenue_subtitle": "2024年收入（越南盾）",
+          "tons": "66,000",
           "tons_subtitle": "吨/年",
-          "revenue": "72亿",
-          "revenue_subtitle": "2024年收入（越南盾）"
+          "bags": "1.1百万",
+          "bags_subtitle": "袋/年", 
+          "experience": "30+年",
+          "experience_subtitle-top": "生产、采购经验",
+          "experience_subtitle-bottom": "和国际农产品出口",
+          "factory_warehouse": "02",
+          "factory_warehouse_subtitle": "仓库/工厂",
+          "agricultural_services": "03",
+          "agricultural_services_subtitle": "投资项目"
         }
       },
       "products_section": {
